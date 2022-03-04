@@ -73,6 +73,23 @@ button {
     height: 700px;
 }
 
+.banner__gradient {
+    position: relative;
+}
+
+.banner__gradient::after{
+    
+    content: '';
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(90deg, #F0F3F4 0%, rgba(83, 99, 97, 0.25) 100%);
+    position: absolute;
+    
+}
+
 .banner__img {
     width: 100%;
     height: 700px;
