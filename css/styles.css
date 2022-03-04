@@ -14,6 +14,19 @@ header {
     padding: 12px 40px;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #17201F;
+}
+
+button {
+    font-family: 'Poppins', sans-serif; 
+}
+
 .header__nav {
     justify-content: space-between;
     display: flex;
@@ -28,4 +41,29 @@ header {
 .header__menu {
     display: flex;
 
+}
+
+.menu__item {
+    margin: 0 32px 0 0;
+    font-size: 1.125em;
+}
+
+.header__search {
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    margin: 0 32px 0 0;
+    background-color: transparent;
+    border: transparent;
+    align-items: center;
+}
+
+.header__btn {
+    width: 140px;
+    height: 40px;
+    background: #93B1B1;
+    border: 1px solid #17201F;
+    border-radius: 5px;
+    color: #F0F3F4;
+    font-size: 1.125em;
 }
