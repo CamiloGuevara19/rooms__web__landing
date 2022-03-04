@@ -130,3 +130,159 @@ button {
     color: #F0F3F4;
     font-size: 1.125em;
 }
+
+.proof {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 132px 366px;
+    align-items: center;
+    background: #F0F3F4;
+}
+
+
+
+.proof__quote {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    top:132px;
+    left: 366px;
+    margin-bottom: 19px;
+    color: #17201F;
+}
+
+.logo__rps {
+    width: 41px;
+    height: 41px;
+    margin-bottom: 23px;
+    margin-right: 50%;
+    margin-left: 50%;
+}
+
+.proof__nametag {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    color: #17201F;
+    
+}
+
+.features {
+    display: block;
+}
+
+.left {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background: #D7DCE0;
+}
+
+.left__img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.left__text{
+    display: table-row;
+    padding: 179px 143px 179px 834px;
+}
+
+.left__text, h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+
+}
+
+.left__text, p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-bottom: 24px;
+}
+
+.left__button{
+    width: 200px;
+    height: 60px;
+    background: #93B1B1;
+    border: 1px solid #17201F;
+    border-radius: 5px;
+    color: #F0F3F4;
+    font-size: 1.125em;
+}
+
+.right {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background: #F0F3F4;
+}
+
+.right__text {
+    display: table-row;
+    padding: 179px 109px 179px 165px;
+}
+
+.right__text, h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.right__text, p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-bottom: 24px;
+}
+
+.right__button {
+    width: 200px;
+    height: 60px;
+    background: #93B1B1;
+    border: 1px solid #17201F;
+    border-radius: 5px;
+    color: #F0F3F4;
+    font-size: 1.125em;
+}
+
+.right__img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.catalog {
+    width: 100%;
+    height: 820px;
+    padding-top: 96px;
+    padding-bottom: 120px;
+    background: #D7DCE0;
+}
+
+.catalog__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.products {
+
+}
+
+.newsletter {
+    width: 100%;
+    height: 568px;
+    display: contents;
+    align-items: center;
+}
