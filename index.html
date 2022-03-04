@@ -5,85 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROOMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
     <header>
-        <object data="./data/rooms__logo.svg" width="140" heigh="27" type=""></object>
+        <nav class="header__nav">
+            <object data="./data/rooms__logo.svg" type="" class="logo"></object>
 
-        <nav>
-            <ul>
-                <li>Music</li>
-                <li>Players</li>
-                <li>Contact</li>
+            <ul class="header__menu">
+                <li class="menu__item"><a href="#">Music</a></li>
+                <li class="menu__item"><a href="#">Players</a></li>
+                <li class="menu__item"><a href="#">Contact</a></li>
             </ul>
-        </nav>
 
-        <object data="./data/search_black_24dp.svg" type=""></object>
-        
-        <button>
-            Sing up
-        </button>
+            <div>
+                <button class="header__search">
+                    <object data="./data/search_black_24dp.svg" type="" ></object>
+                </button>
+            
+                <button class="header__btn">
+                    Sing up
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <img src="./data/pexels-rfstudio-3618362.jpg" alt="" widht="100%" height="700">
+    <main class="banner">
+        <div class="banner__gradient">
+            <img src="./data/pexels-rfstudio-3618362.jpg" alt="" class="banner__img">
+        </div>
 
-        <h1>
-            Listen music & relax in your room
-        </h1>
-
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla adipisci illum facere eum numquam esse rem, culpa architecto officia praesentium molestias asperiores. Ut beatae labore iure minus voluptates nulla!</h4>
-
-        <button>
-            Learn more
-        </button>
+        <div class="banner__body">
+            <h1 class="banner__title">
+                Listen music & relax in your room
+            </h1>
+    
+            <p class="banner__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla adipisci illum facere eum numquam esse rem, culpa architecto officia praesentium molestias asperiores. Ut beatae labore iure minus voluptates nulla!  
+            </p>
+    
+            <button class="banner__btn">
+                Learn more
+            </button>
+        </div>
     </main>
 
-    <section>
-        <h3>“Listen to music and relax in your room the old school way.”</h3>
+    <section class="proof">
+        <p class="proof__quote">“Listen to music and relax in your room the old school way.”</p>
 
-        <object data="./data/rooms__responsive.svg" type="" widht="41" height="41"></object>
+        <object data="./data/rooms__responsive.svg" type="" class="logo__rps"></object>
 
-        <h6>CEO</h6>
+        <h6 class="proof__nametag">-CEO</h6>
     </section>
 
-    <section>
-        <div>
-            <img src="./data/pexels-moldyvintage-photo-9062566.jpg" widht="100%" height="600" alt="">
+    <section class="features">
+        <div class="left">
+            <img src="./data/pexels-moldyvintage-photo-9062566.jpg"  alt="" class="left__img">
+            <div class="left__text">
+                <h3>Select  a variety of records</h3>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <h3>Select  a variety of records</h3>
+                <button class="left__button">Records</button>
+            </div>
 
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et nobis saepe pariatur a esse dicta! Officia neque id, ullam animi praesentium pariatur, sit voluptatum iusto iure voluptatem, consequatur culpa?</h4>
-
-            <a href="#">Records</a>
         </div>
 
-        <div>
-            <h3>Best record-players in the market</h3>
+        <div class="right">
+            <div class="right__text">
+                <h3>Best record-players in the market</h3>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+                <button class="right__button">Players</button>
+            </div>
 
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et nobis saepe pariatur a esse dicta! Officia neque id, ullam animi praesentium pariatur, sit voluptatum iusto iure voluptatem, consequatur culpa?</h4>
+            <img src="./data/pexels-lisa-fotios-9799267.jpg" alt="" class="right__img">
+        </div>
+    </section>
+    
+    <section class="catalog">
+        <h2 class="catalog__title">Your Best Value Proposition</h2>
 
-            <a href="#">Players</a>
-
-            <img src="./data/pexels-lisa-fotios-9799267.jpg" widht="100%" height="600" alt="">
+        <div class="products">
+            <article>
+                <img src="" alt="">
+    
+                <h4>Articulo</h4>
+    
+                <a href="#">Se more</a>
+            </article>
         </div>
     </section>
 
-        <h2>Your Best Value Proposition</h2>
-
-        <article>
-            <img src="" alt="">
-
-            <h4>Articulo</h4>
-
-            <h6>See more</h6>
-        </article>
-    <section>
-
-    </section>
-
-    <section>
+    <section class="newsletter">
         <form action="">
             <input type="email" placeholder="email">
             <input type="password" placeholder="password">
