@@ -67,3 +67,49 @@ button {
     color: #F0F3F4;
     font-size: 1.125em;
 }
+
+.banner {
+    width: 100%;
+    height: 700px;
+}
+
+.banner__img {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(90deg, #F0F3F4 0%, rgba(83, 99, 97, 0.25) 100%);
+    object-fit: cover;
+    
+}
+
+.banner__body {
+    top: 183px;
+    left: 135px;
+    position: absolute;
+    width: 570px;
+    height: 393px;
+    padding: 0;
+}
+
+.banner__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5em;
+    margin-bottom: 56px;
+}
+
+.banner__txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-bottom: 24px;
+}
+
+.banner__btn {
+    width: 200px;
+    height: 60px;
+    background: #93B1B1;
+    border: 1px solid #17201F;
+    border-radius: 5px;
+    color: #F0F3F4;
+    font-size: 1.125em;
+}
