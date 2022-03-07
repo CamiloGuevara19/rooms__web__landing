@@ -193,7 +193,7 @@ button {
     padding: 179px 143px 179px 834px;
 }
 
-.left__text, h3 {
+.left__title {
     font-style: normal;
     font-weight: bold;
     font-size: 1.5em;
@@ -201,7 +201,7 @@ button {
 
 }
 
-.left__text, p {
+.left__paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
@@ -230,14 +230,14 @@ button {
     padding: 179px 109px 179px 165px;
 }
 
-.right__text, h3 {
+.right__title {
     font-style: normal;
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 40px;
 }
 
-.right__text, p {
+.right__paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
@@ -301,14 +301,14 @@ button {
     padding: 24px 24px 13px 24px;
 }
 
-.products__details, h4 {
+.products__title {
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
     margin-bottom: 74px;
 }
 
-.products__details, a {
+.products__more {
     font-style: normal;
     font-weight: normal;
     font-size: 0.875em;
@@ -317,10 +317,10 @@ button {
 .newsletter {
     width: 100%;
     height: 568px;
-    padding: 120px 0 140px 0;
+    padding: 120px 537px 140px 537px;
 }
 
-.newsletter, h4 {
+.newsletter__title {
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
@@ -333,21 +333,26 @@ button {
     flex-direction: column;
 }
 
-.inputs {
+.forms__inputs {
+    font-family: Poppins;
     width: 360px;
     height: 64px;
-    background: #F0F3F4;
+    background: transparent;
     border: 1px solid #536361;
     box-sizing: border-box;
     border-radius: 5px;
     margin-bottom: 16px;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.7407407407407407em;
+    font-size: 1.25em;
+}
+
+.forms__inputs::placeholder{
     color: rgba(147, 177, 177, 0.5);
 }
 
-.inputs__btn {
+.forms__btn {
+    font-family: Poppins;
     width: 360px;
     height: 64px;
     background: #93B1B1;
@@ -356,7 +361,7 @@ button {
     border-radius: 5px;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.25em;
+    font-size: 1.125em;
     color: #F0F3F4;
 
 }
