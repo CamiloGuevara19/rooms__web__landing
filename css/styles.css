@@ -158,7 +158,7 @@ button {
     height: 41px;
     margin-bottom: 23px;
     margin-right: 50%;
-    margin-left: 4%;
+    margin-left: 47.5%;
 }
 
 .proof__nametag {
@@ -317,7 +317,8 @@ button {
 .newsletter {
     width: 100%;
     height: 568px;
-    padding: 120px 537px 140px 537px;
+    padding: 120px 41% 140px 537px;
+    align-items: center;
 }
 
 .newsletter__title {
