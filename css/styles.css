@@ -40,12 +40,17 @@ button {
 
 .header__menu {
     display: flex;
-
 }
 
 .menu__item {
     margin: 0 32px 0 32px;
     font-size: 1.125em;
+}
+
+.header__div {
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 .header__search {
@@ -135,9 +140,11 @@ button {
     position: relative;
     width: 100%;
     height: 400px;
-    padding: 132px 366px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background: #F0F3F4;
+    padding-top: 132px;
 }
 
 
@@ -157,8 +164,7 @@ button {
     width: 41px;
     height: 41px;
     margin-bottom: 23px;
-    margin-right: 50%;
-    margin-left: 47.5%;
+
 }
 
 .proof__nametag {
@@ -178,6 +184,7 @@ button {
     width: 100%;
     height: 600px;
     display: flex;
+    flex-direction: row;
     background: #D7DCE0;
 }
 
@@ -185,12 +192,14 @@ button {
     width: 50%;
     height: 600px;
     object-fit: cover;
-    position: absolute;
 }
 
 .left__text{
-    display: table-row;
-    padding: 179px 143px 179px 834px;
+    width: 50%;
+    padding: 179px 0 0 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .left__title {
@@ -198,6 +207,7 @@ button {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 40px;
+    color: #17201F;
 
 }
 
@@ -206,6 +216,7 @@ button {
     font-weight: normal;
     font-size: 1.25em;
     margin-bottom: 24px;
+    color: #17201F;
 }
 
 .left__button{
@@ -222,12 +233,16 @@ button {
     width: 100%;
     height: 600px;
     display: flex;
+    flex-direction: row;
     background: #F0F3F4;
 }
 
 .right__text {
-    display: table-row;
-    padding: 179px 109px 179px 165px;
+    width: 50%;
+    padding: 179px 114px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .right__title {
@@ -235,6 +250,7 @@ button {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 40px;
+    color: #17201F;
 }
 
 .right__paragraph {
@@ -242,6 +258,7 @@ button {
     font-weight: normal;
     font-size: 1.25em;
     margin-bottom: 24px;
+    color: #17201F;
 }
 
 .right__button {
@@ -255,6 +272,7 @@ button {
 }
 
 .right__img {
+    left: 50%;
     width: 50%;
     height: 600px;
     object-fit: cover;
@@ -306,19 +324,22 @@ button {
     font-weight: normal;
     font-size: 1.25em;
     margin-bottom: 74px;
+    color: #17201F;
 }
 
 .products__more {
     font-style: normal;
     font-weight: normal;
     font-size: 0.875em;
+    color: #17201F;
 }
 
 .newsletter {
     width: 100%;
     height: 568px;
-    padding: 120px 41% 140px 537px;
+    padding: 120px 0 140px 0;
     align-items: center;
+    background: #F0F3F4;
 }
 
 .newsletter__title {
@@ -327,11 +348,13 @@ button {
     font-size: 1.25em;
     margin-bottom: 47px;
     text-align: center;
+    color: #17201F;
 }
 
 .forms {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .forms__inputs {
@@ -339,13 +362,14 @@ button {
     width: 360px;
     height: 64px;
     background: transparent;
-    border: 1px solid #536361;
+    border: 1px solid #17201F;;
     box-sizing: border-box;
     border-radius: 5px;
     margin-bottom: 16px;
     font-style: normal;
     font-weight: normal;
     font-size: 1.25em;
+    padding-left: 25px;
 }
 
 .forms__inputs::placeholder{
@@ -357,12 +381,67 @@ button {
     width: 360px;
     height: 64px;
     background: #93B1B1;
-    border: 1px solid #536361;
+    border: 1px solid #17201F;;
     box-sizing: border-box;
     border-radius: 5px;
     font-style: normal;
     font-weight: normal;
     font-size: 1.125em;
     color: #F0F3F4;
+}
 
+.footer{
+    width: 100%;
+    height: 410px;
+    background: #93B1B1;
+    padding-top: 111px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.footer__list{
+    display: flex;
+    margin-bottom: 114px;
+}
+
+.footer__item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    color: #F0F3F4;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.footer__img{
+    width: 140px;
+    height: 27px;
+    margin-left: 88px;
+    margin-right: 88px;
+}
+
+.footer__socials{
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.socials__item{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.socials__img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer__copyright{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    color: #F0F3F4;
+    text-align: center;
 }
