@@ -301,6 +301,7 @@ button {
     display: flex;
     width: 270px;
     height: 436px;
+    align-items: center;
 }
 
 .products__box {

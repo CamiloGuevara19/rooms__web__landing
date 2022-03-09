@@ -1,0 +1,22 @@
+@media all  and (max-width: 1080px) {
+
+    .left__text{
+        padding-left: 70px;
+    }
+
+    .right__text{
+        padding-right: 70px;
+    }
+
+    .products{
+        margin-left: 80px;
+    }
+
+    .product4 {
+        display: none;
+    }
+    
+    .product5{
+        display: none
+    }
+}
