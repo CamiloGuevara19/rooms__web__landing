@@ -22,9 +22,43 @@
 
 @media all  and (max-width: 970px) {
 
+    .banner {
+        height: 500px;
+    }
+
+    .banner__gradient {
+        height: 500px;
+    }
+
     .banner__body {
+        top: 120px;
+        left: 200px;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__title {
+        font-size: 2em;
+    }
+
+    .proof{
+        height: 270px;
+        padding-top: 78px;
+    }
+
+    .left {
+        height: 400px;
+    }
+
+    .left__img {
+        height: 400px;
+    }
+
+    .left__text {
+        padding-top: 70px;
     }
     
     
