@@ -1,21 +1,17 @@
 @media all  and (max-width: 1500px) {
 
-    .products{
-        /*justify-content: center;*/
-    }
-
-    .product5{
+    .product5 {
         display: none
     }
 }
 
-@media all  and (max-width: 1080px) {
+@media all  and (max-width: 1170px) {
 
-    .left__text{
+    .left__text {
         padding-left: 70px;
     }
 
-    .right__text{
+    .right__text {
         padding-right: 70px;
     }
 
@@ -24,12 +20,17 @@
     }
 }
 
-@media all  and (max-width: 985px) {
-    .products{
-        margin-left: 0px;
+@media all  and (max-width: 970px) {
+
+    .banner__body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .footer__item {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
-@media all  and (max-width: 768px) {
-
-}

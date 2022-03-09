@@ -285,6 +285,8 @@ button {
     height: 820px;
     padding-top: 96px;
     padding-bottom: 120px;
+    padding-left: 135px;
+    padding-right: 135px;
     background: #D7DCE0;
     align-items: center;
 }
@@ -306,10 +308,9 @@ button {
 }
 
 .products__box {
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 30px 15px 0 15px;
     width: 270px;
-    height: 436px;
+    height: 100%;
 }
 
 .products img {
