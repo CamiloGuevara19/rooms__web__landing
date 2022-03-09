@@ -117,6 +117,7 @@ button {
     font-weight: 500;
     font-size: 3.5em;
     margin-bottom: 56px;
+    color: #17201F;
 }
 
 .banner__txt {
@@ -124,6 +125,7 @@ button {
     font-weight: normal;
     font-size: 1.25em;
     margin-bottom: 24px;
+    color: #17201F;
 }
 
 .banner__btn {
@@ -306,7 +308,7 @@ button {
     margin-left: 30px;
 }
 
-.products, img {
+.products img {
     height: 270px;
     width: 270px;
     object-fit: cover;
@@ -405,6 +407,7 @@ button {
 .footer__list{
     display: flex;
     margin-bottom: 114px;
+    align-items: center;
 }
 
 .footer__item{
@@ -419,8 +422,8 @@ button {
 .footer__img{
     width: 140px;
     height: 27px;
-    margin-left: 88px;
-    margin-right: 88px;
+   /* margin-left: 88px;*/
+    /*margin-right: 88px;*/
 }
 
 .footer__socials{
