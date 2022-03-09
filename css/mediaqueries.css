@@ -26,7 +26,11 @@
         height: 500px;
     }
 
-    .banner__gradient {
+    .banner__img {
+        height: 500px;
+    }
+
+    .banner__gradient::after {
         height: 500px;
     }
 
@@ -46,7 +50,7 @@
     }
 }
 
-@media all  and (max-width: 970px) {
+@media all  and (max-width: 870px) {
 
     .banner__body {
         left: 135px;
@@ -114,6 +118,179 @@
 
     .product3 {
         display: none;
+    }
+
+}
+
+@media all  and (max-width: 770px) {
+
+    .menu__item {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .banner{
+        height: 350px;
+    }
+
+    .banner__img {
+        height: 350px;
+    }
+
+    .banner__body{
+        left: 100px;
+        top: 60px;
+    }
+
+    .banner__gradient::after {
+        height: 350px;
+    }
+
+    .banner__title {
+        font-size: 1.5em;
+        margin-bottom: 24px;
+    }
+
+    .banner__txt {
+        font-size: 0.875em;
+    }
+
+    .banner__btn {
+        width: 150px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .header__btn {
+        width: 70px;
+        height: 40px;
+        font-size: 0.8em;
+    }
+
+    .menu__item {
+        font-size: 0.8em;
+    }
+
+    .proof{
+        height: 200px;
+        padding-top: 60px;
+    }
+
+    .proof__quote {
+        font-size: 1em;
+    }
+
+    .logo__rps {
+        width: 20px;
+        height: 20px;
+    }
+
+    .left {
+        height: 300px;
+    }
+
+    .left__img {
+        height: 300px;
+    }
+
+    .left__text {
+        padding-left: 40px;
+    }
+
+    .left__title {
+        font-size: 1em;
+    }
+    
+    .left__paragraph {
+        font-size: 0.8em;
+    }
+
+    .left__button {
+        width: 150px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .right {
+        height: 300px;
+    }
+
+    .right__img {
+        height: 300px;
+    }
+
+    .right__text {
+        padding-right: 40px;
+    }
+
+    .right__title {
+        font-size: 1em;
+    }
+    
+    .right__paragraph {
+        font-size: 0.8em;
+    }
+
+    .right__button {
+        width: 150px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .catalog {
+        height: 500px;
+    }
+
+    .catalog__title {
+        font-size: 1.25em;
+        margin-bottom: 24px;
+    }
+
+    .products {
+        height: 400px;
+    }
+
+    .products__box {
+        height: 400px;
+    }
+
+    .products__details {
+        height: 100px
+    }
+
+    .products__title {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .newsletter {
+        height: 350px;
+    }
+
+    .forms__inputs {
+        height: 40px;
+        font-size: 0.8em;
+    }
+
+    .forms__btn {
+        height: 40px;
+        font-size: 0.8em;
+    }
+
+    .footer {
+        height: 300px;
+    }
+
+    .footer__item {
+        font-size: 0.7em;
+    }
+
+    .footer__list {
+        margin-bottom: 40px;
+    }
+
+    .footer__socials {
+        margin-bottom: 40px;
     }
 
 }
