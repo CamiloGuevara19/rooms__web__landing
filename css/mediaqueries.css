@@ -1,3 +1,14 @@
+@media all  and (max-width: 1500px) {
+
+    .products{
+        /*justify-content: center;*/
+    }
+
+    .product5{
+        display: none
+    }
+}
+
 @media all  and (max-width: 1080px) {
 
     .left__text{
@@ -8,15 +19,17 @@
         padding-right: 70px;
     }
 
-    .products{
-        margin-left: 80px;
-    }
-
     .product4 {
         display: none;
     }
-    
-    .product5{
-        display: none
+}
+
+@media all  and (max-width: 985px) {
+    .products{
+        margin-left: 0px;
     }
+}
+
+@media all  and (max-width: 768px) {
+
 }
