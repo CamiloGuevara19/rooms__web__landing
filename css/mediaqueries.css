@@ -412,4 +412,32 @@
     }
 }
 
+@media all  and (max-width: 400px) {
+
+    .header__menu {
+        display: none;
+    }
+
+    .left__text {
+        padding-left: 20px;
+    }
+
+    .left__title {
+        font-size: 0.6em;
+    }
+
+    .right__text {
+        padding-right: 20px;
+    }
+
+    .right__title {
+        font-size: 0.6em;
+    }
+
+    .footer__item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 
