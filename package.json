@@ -1,0 +1,26 @@
+{
+  "name": "rooms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./login.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloGuevara19/rooms__web__landing.git"
+  },
+  "author": "Camilo Guevara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloGuevara19/rooms__web__landing/issues"
+  },
+  "homepage": "https://github.com/CamiloGuevara19/rooms__web__landing#readme",
+  "dependencies": {
+    "firebase": "^9.6.11"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
