@@ -5,21 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/login.c4295b28.css">
 </head>
 <body>
 
     <div class="login__info">
-        <form action="" id="createUserForm">
-            <input type="text" placeholder="Name" name="name">
-            <input type="email" placeholder="Email" name="email">
-            <input type="password" placeholder="Password" name="password">
-            <input type="submit" value="Sign up">
+
+        <h4 class="forms__titles">
+            Sign In
+        </h4>
+
+        <form action="" id="createUserForm" class="forms">
+            <input type="text" placeholder="Name" name="name" class="forms__inputs">
+            <input type="email" placeholder="Email" name="email" class="forms__inputs">
+            <input type="password" placeholder="Password" name="password" class="forms__inputs">
+            <input type="submit" value="Sign up" class="forms__btn">
         </form>
 
-        <form action="" id="loginUserForm">
-            <input type="email" placeholder="Email" name="email">
-            <input type="password" placeholder="Password" name="password">
-            <input type="submit" value="Login">
+        <h4 class="forms__titles">
+            Login
+        </h4>
+
+        <form action="" id="loginUserForm" class="forms">
+            <input type="email" placeholder="Email" name="email" class="forms__inputs">
+            <input type="password" placeholder="Password" name="password" class="forms__inputs">
+            <input type="submit" value="Login" class="forms__btn">
         </form>
     </div>
 

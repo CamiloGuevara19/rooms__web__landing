@@ -583,1215 +583,179 @@ async function loginUser(email, password) {
     }
 }
 
-},{"firebase/app":"5wGMN","firebase/auth":"drt1f"}],"5wGMN":[function(require,module,exports) {
+},{"firebase/auth":"drt1f","firebase/app":"5wGMN"}],"drt1f":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+var _auth = require("@firebase/auth");
+parcelHelpers.exportAll(_auth, exports);
+
+},{"@firebase/auth":"khbwD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"khbwD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ActionCodeOperation", ()=>_index7078A255Js.A
+);
+parcelHelpers.export(exports, "ActionCodeURL", ()=>_index7078A255Js.ac
+);
+parcelHelpers.export(exports, "AuthCredential", ()=>_index7078A255Js.G
+);
+parcelHelpers.export(exports, "AuthErrorCodes", ()=>_index7078A255Js.C
+);
+parcelHelpers.export(exports, "EmailAuthCredential", ()=>_index7078A255Js.H
+);
+parcelHelpers.export(exports, "EmailAuthProvider", ()=>_index7078A255Js.L
+);
+parcelHelpers.export(exports, "FacebookAuthProvider", ()=>_index7078A255Js.M
+);
+parcelHelpers.export(exports, "FactorId", ()=>_index7078A255Js.F
+);
+parcelHelpers.export(exports, "GithubAuthProvider", ()=>_index7078A255Js.Q
+);
+parcelHelpers.export(exports, "GoogleAuthProvider", ()=>_index7078A255Js.N
+);
+parcelHelpers.export(exports, "OAuthCredential", ()=>_index7078A255Js.I
+);
+parcelHelpers.export(exports, "OAuthProvider", ()=>_index7078A255Js.T
+);
+parcelHelpers.export(exports, "OperationType", ()=>_index7078A255Js.O
+);
+parcelHelpers.export(exports, "PhoneAuthCredential", ()=>_index7078A255Js.J
+);
+parcelHelpers.export(exports, "PhoneAuthProvider", ()=>_index7078A255Js.P
+);
+parcelHelpers.export(exports, "PhoneMultiFactorGenerator", ()=>_index7078A255Js.m
+);
+parcelHelpers.export(exports, "ProviderId", ()=>_index7078A255Js.o
+);
+parcelHelpers.export(exports, "RecaptchaVerifier", ()=>_index7078A255Js.R
+);
+parcelHelpers.export(exports, "SAMLAuthProvider", ()=>_index7078A255Js.U
+);
+parcelHelpers.export(exports, "SignInMethod", ()=>_index7078A255Js.S
+);
+parcelHelpers.export(exports, "TwitterAuthProvider", ()=>_index7078A255Js.V
+);
+parcelHelpers.export(exports, "applyActionCode", ()=>_index7078A255Js.a1
+);
+parcelHelpers.export(exports, "browserLocalPersistence", ()=>_index7078A255Js.b
+);
+parcelHelpers.export(exports, "browserPopupRedirectResolver", ()=>_index7078A255Js.k
+);
+parcelHelpers.export(exports, "browserSessionPersistence", ()=>_index7078A255Js.a
+);
+parcelHelpers.export(exports, "checkActionCode", ()=>_index7078A255Js.a2
+);
+parcelHelpers.export(exports, "confirmPasswordReset", ()=>_index7078A255Js.a0
+);
+parcelHelpers.export(exports, "connectAuthEmulator", ()=>_index7078A255Js.E
+);
+parcelHelpers.export(exports, "createUserWithEmailAndPassword", ()=>_index7078A255Js.a4
+);
+parcelHelpers.export(exports, "debugErrorMap", ()=>_index7078A255Js.z
+);
+parcelHelpers.export(exports, "deleteUser", ()=>_index7078A255Js.y
+);
+parcelHelpers.export(exports, "fetchSignInMethodsForEmail", ()=>_index7078A255Js.a9
+);
+parcelHelpers.export(exports, "getAdditionalUserInfo", ()=>_index7078A255Js.ak
+);
+parcelHelpers.export(exports, "getAuth", ()=>_index7078A255Js.n
+);
+parcelHelpers.export(exports, "getIdToken", ()=>_index7078A255Js.ah
+);
+parcelHelpers.export(exports, "getIdTokenResult", ()=>_index7078A255Js.ai
+);
+parcelHelpers.export(exports, "getMultiFactorResolver", ()=>_index7078A255Js.am
+);
+parcelHelpers.export(exports, "getRedirectResult", ()=>_index7078A255Js.j
+);
+parcelHelpers.export(exports, "inMemoryPersistence", ()=>_index7078A255Js.K
+);
+parcelHelpers.export(exports, "indexedDBLocalPersistence", ()=>_index7078A255Js.i
+);
+parcelHelpers.export(exports, "initializeAuth", ()=>_index7078A255Js.D
+);
+parcelHelpers.export(exports, "isSignInWithEmailLink", ()=>_index7078A255Js.a7
+);
+parcelHelpers.export(exports, "linkWithCredential", ()=>_index7078A255Js.Y
+);
+parcelHelpers.export(exports, "linkWithPhoneNumber", ()=>_index7078A255Js.l
+);
+parcelHelpers.export(exports, "linkWithPopup", ()=>_index7078A255Js.d
+);
+parcelHelpers.export(exports, "linkWithRedirect", ()=>_index7078A255Js.g
+);
+parcelHelpers.export(exports, "multiFactor", ()=>_index7078A255Js.an
+);
+parcelHelpers.export(exports, "onAuthStateChanged", ()=>_index7078A255Js.t
+);
+parcelHelpers.export(exports, "onIdTokenChanged", ()=>_index7078A255Js.q
+);
+parcelHelpers.export(exports, "parseActionCodeURL", ()=>_index7078A255Js.ad
+);
+parcelHelpers.export(exports, "prodErrorMap", ()=>_index7078A255Js.B
+);
+parcelHelpers.export(exports, "reauthenticateWithCredential", ()=>_index7078A255Js.Z
+);
+parcelHelpers.export(exports, "reauthenticateWithPhoneNumber", ()=>_index7078A255Js.r
+);
+parcelHelpers.export(exports, "reauthenticateWithPopup", ()=>_index7078A255Js.e
+);
+parcelHelpers.export(exports, "reauthenticateWithRedirect", ()=>_index7078A255Js.h
+);
+parcelHelpers.export(exports, "reload", ()=>_index7078A255Js.al
+);
+parcelHelpers.export(exports, "sendEmailVerification", ()=>_index7078A255Js.aa
+);
+parcelHelpers.export(exports, "sendPasswordResetEmail", ()=>_index7078A255Js.$
+);
+parcelHelpers.export(exports, "sendSignInLinkToEmail", ()=>_index7078A255Js.a6
+);
+parcelHelpers.export(exports, "setPersistence", ()=>_index7078A255Js.p
+);
+parcelHelpers.export(exports, "signInAnonymously", ()=>_index7078A255Js.W
+);
+parcelHelpers.export(exports, "signInWithCredential", ()=>_index7078A255Js.X
+);
+parcelHelpers.export(exports, "signInWithCustomToken", ()=>_index7078A255Js._
+);
+parcelHelpers.export(exports, "signInWithEmailAndPassword", ()=>_index7078A255Js.a5
+);
+parcelHelpers.export(exports, "signInWithEmailLink", ()=>_index7078A255Js.a8
+);
+parcelHelpers.export(exports, "signInWithPhoneNumber", ()=>_index7078A255Js.s
+);
+parcelHelpers.export(exports, "signInWithPopup", ()=>_index7078A255Js.c
+);
+parcelHelpers.export(exports, "signInWithRedirect", ()=>_index7078A255Js.f
+);
+parcelHelpers.export(exports, "signOut", ()=>_index7078A255Js.x
+);
+parcelHelpers.export(exports, "unlink", ()=>_index7078A255Js.aj
+);
+parcelHelpers.export(exports, "updateCurrentUser", ()=>_index7078A255Js.w
+);
+parcelHelpers.export(exports, "updateEmail", ()=>_index7078A255Js.af
+);
+parcelHelpers.export(exports, "updatePassword", ()=>_index7078A255Js.ag
+);
+parcelHelpers.export(exports, "updatePhoneNumber", ()=>_index7078A255Js.u
+);
+parcelHelpers.export(exports, "updateProfile", ()=>_index7078A255Js.ae
+);
+parcelHelpers.export(exports, "useDeviceLanguage", ()=>_index7078A255Js.v
+);
+parcelHelpers.export(exports, "verifyBeforeUpdateEmail", ()=>_index7078A255Js.ab
+);
+parcelHelpers.export(exports, "verifyPasswordResetCode", ()=>_index7078A255Js.a3
+);
+var _util = require("@firebase/util");
 var _app = require("@firebase/app");
-parcelHelpers.exportAll(_app, exports);
-var name = "firebase";
-var version = "9.6.11";
-/**
- * @license
- * Copyright 2020 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ _app.registerVersion(name, version, 'app');
-
-},{"@firebase/app":"3AcPV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3AcPV":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "FirebaseError", ()=>_util.FirebaseError
-);
-parcelHelpers.export(exports, "SDK_VERSION", ()=>SDK_VERSION
-);
-parcelHelpers.export(exports, "_DEFAULT_ENTRY_NAME", ()=>DEFAULT_ENTRY_NAME
-);
-parcelHelpers.export(exports, "_addComponent", ()=>_addComponent
-);
-parcelHelpers.export(exports, "_addOrOverwriteComponent", ()=>_addOrOverwriteComponent
-);
-parcelHelpers.export(exports, "_apps", ()=>_apps
-);
-parcelHelpers.export(exports, "_clearComponents", ()=>_clearComponents
-);
-parcelHelpers.export(exports, "_components", ()=>_components
-);
-parcelHelpers.export(exports, "_getProvider", ()=>_getProvider
-);
-parcelHelpers.export(exports, "_registerComponent", ()=>_registerComponent
-);
-parcelHelpers.export(exports, "_removeServiceInstance", ()=>_removeServiceInstance
-);
-parcelHelpers.export(exports, "deleteApp", ()=>deleteApp
-);
-parcelHelpers.export(exports, "getApp", ()=>getApp
-);
-parcelHelpers.export(exports, "getApps", ()=>getApps
-);
-parcelHelpers.export(exports, "initializeApp", ()=>initializeApp
-);
-parcelHelpers.export(exports, "onLog", ()=>onLog
-);
-parcelHelpers.export(exports, "registerVersion", ()=>registerVersion
-);
-parcelHelpers.export(exports, "setLogLevel", ()=>setLogLevel
-);
-var _component = require("@firebase/component");
+var _tslib = require("tslib");
 var _logger = require("@firebase/logger");
-var _util = require("@firebase/util");
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ class PlatformLoggerServiceImpl {
-    constructor(container){
-        this.container = container;
-    }
-    // In initial implementation, this will be called by installations on
-    // auth token refresh, and installations will send this string.
-    getPlatformInfoString() {
-        const providers = this.container.getProviders();
-        // Loop through providers and get library/version pairs from any that are
-        // version components.
-        return providers.map((provider)=>{
-            if (isVersionServiceProvider(provider)) {
-                const service = provider.getImmediate();
-                return `${service.library}/${service.version}`;
-            } else return null;
-        }).filter((logString)=>logString
-        ).join(' ');
-    }
-}
-/**
- *
- * @param provider check if this provider provides a VersionService
- *
- * NOTE: Using Provider<'app-version'> is a hack to indicate that the provider
- * provides VersionService. The provider is not necessarily a 'app-version'
- * provider.
- */ function isVersionServiceProvider(provider) {
-    const component = provider.getComponent();
-    return (component === null || component === void 0 ? void 0 : component.type) === "VERSION" /* VERSION */ ;
-}
-const name$o = "@firebase/app";
-const version$1 = "0.7.21";
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const logger = new _logger.Logger('@firebase/app');
-const name$n = "@firebase/app-compat";
-const name$m = "@firebase/analytics-compat";
-const name$l = "@firebase/analytics";
-const name$k = "@firebase/app-check-compat";
-const name$j = "@firebase/app-check";
-const name$i = "@firebase/auth";
-const name$h = "@firebase/auth-compat";
-const name$g = "@firebase/database";
-const name$f = "@firebase/database-compat";
-const name$e = "@firebase/functions";
-const name$d = "@firebase/functions-compat";
-const name$c = "@firebase/installations";
-const name$b = "@firebase/installations-compat";
-const name$a = "@firebase/messaging";
-const name$9 = "@firebase/messaging-compat";
-const name$8 = "@firebase/performance";
-const name$7 = "@firebase/performance-compat";
-const name$6 = "@firebase/remote-config";
-const name$5 = "@firebase/remote-config-compat";
-const name$4 = "@firebase/storage";
-const name$3 = "@firebase/storage-compat";
-const name$2 = "@firebase/firestore";
-const name$1 = "@firebase/firestore-compat";
-const name = "firebase";
-const version = "9.6.11";
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * The default app name
- *
- * @internal
- */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
-const PLATFORM_LOG_STRING = {
-    [name$o]: 'fire-core',
-    [name$n]: 'fire-core-compat',
-    [name$l]: 'fire-analytics',
-    [name$m]: 'fire-analytics-compat',
-    [name$j]: 'fire-app-check',
-    [name$k]: 'fire-app-check-compat',
-    [name$i]: 'fire-auth',
-    [name$h]: 'fire-auth-compat',
-    [name$g]: 'fire-rtdb',
-    [name$f]: 'fire-rtdb-compat',
-    [name$e]: 'fire-fn',
-    [name$d]: 'fire-fn-compat',
-    [name$c]: 'fire-iid',
-    [name$b]: 'fire-iid-compat',
-    [name$a]: 'fire-fcm',
-    [name$9]: 'fire-fcm-compat',
-    [name$8]: 'fire-perf',
-    [name$7]: 'fire-perf-compat',
-    [name$6]: 'fire-rc',
-    [name$5]: 'fire-rc-compat',
-    [name$4]: 'fire-gcs',
-    [name$3]: 'fire-gcs-compat',
-    [name$2]: 'fire-fst',
-    [name$1]: 'fire-fst-compat',
-    'fire-js': 'fire-js',
-    [name]: 'fire-js-all'
-};
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * @internal
- */ const _apps = new Map();
-/**
- * Registered components.
- *
- * @internal
- */ // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const _components = new Map();
-/**
- * @param component - the component being added to this app's container
- *
- * @internal
- */ function _addComponent(app, component) {
-    try {
-        app.container.addComponent(component);
-    } catch (e) {
-        logger.debug(`Component ${component.name} failed to register with FirebaseApp ${app.name}`, e);
-    }
-}
-/**
- *
- * @internal
- */ function _addOrOverwriteComponent(app, component) {
-    app.container.addOrOverwriteComponent(component);
-}
-/**
- *
- * @param component - the component to register
- * @returns whether or not the component is registered successfully
- *
- * @internal
- */ function _registerComponent(component) {
-    const componentName = component.name;
-    if (_components.has(componentName)) {
-        logger.debug(`There were multiple attempts to register component ${componentName}.`);
-        return false;
-    }
-    _components.set(componentName, component);
-    // add the component to existing app instances
-    for (const app of _apps.values())_addComponent(app, component);
-    return true;
-}
-/**
- *
- * @param app - FirebaseApp instance
- * @param name - service name
- *
- * @returns the provider for the service with the matching name
- *
- * @internal
- */ function _getProvider(app, name1) {
-    const heartbeatController = app.container.getProvider('heartbeat').getImmediate({
-        optional: true
-    });
-    if (heartbeatController) heartbeatController.triggerHeartbeat();
-    return app.container.getProvider(name1);
-}
-/**
- *
- * @param app - FirebaseApp instance
- * @param name - service name
- * @param instanceIdentifier - service instance identifier in case the service supports multiple instances
- *
- * @internal
- */ function _removeServiceInstance(app, name2, instanceIdentifier = DEFAULT_ENTRY_NAME) {
-    _getProvider(app, name2).clearInstance(instanceIdentifier);
-}
-/**
- * Test only
- *
- * @internal
- */ function _clearComponents() {
-    _components.clear();
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const ERRORS = {
-    ["no-app" /* NO_APP */ ]: "No Firebase App '{$appName}' has been created - call Firebase App.initializeApp()",
-    ["bad-app-name" /* BAD_APP_NAME */ ]: "Illegal App name: '{$appName}",
-    ["duplicate-app" /* DUPLICATE_APP */ ]: "Firebase App named '{$appName}' already exists with different options or config",
-    ["app-deleted" /* APP_DELETED */ ]: "Firebase App named '{$appName}' already deleted",
-    ["invalid-app-argument" /* INVALID_APP_ARGUMENT */ ]: "firebase.{$appName}() takes either no argument or a Firebase App instance.",
-    ["invalid-log-argument" /* INVALID_LOG_ARGUMENT */ ]: 'First argument to `onLog` must be null or a function.',
-    ["storage-open" /* STORAGE_OPEN */ ]: 'Error thrown when opening storage. Original error: {$originalErrorMessage}.',
-    ["storage-get" /* STORAGE_GET */ ]: 'Error thrown when reading from storage. Original error: {$originalErrorMessage}.',
-    ["storage-set" /* STORAGE_WRITE */ ]: 'Error thrown when writing to storage. Original error: {$originalErrorMessage}.',
-    ["storage-delete" /* STORAGE_DELETE */ ]: 'Error thrown when deleting from storage. Original error: {$originalErrorMessage}.'
-};
-const ERROR_FACTORY = new _util.ErrorFactory('app', 'Firebase', ERRORS);
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ class FirebaseAppImpl {
-    constructor(options, config, container){
-        this._isDeleted = false;
-        this._options = Object.assign({}, options);
-        this._config = Object.assign({}, config);
-        this._name = config.name;
-        this._automaticDataCollectionEnabled = config.automaticDataCollectionEnabled;
-        this._container = container;
-        this.container.addComponent(new _component.Component('app', ()=>this
-        , "PUBLIC" /* PUBLIC */ ));
-    }
-    get automaticDataCollectionEnabled() {
-        this.checkDestroyed();
-        return this._automaticDataCollectionEnabled;
-    }
-    set automaticDataCollectionEnabled(val) {
-        this.checkDestroyed();
-        this._automaticDataCollectionEnabled = val;
-    }
-    get name() {
-        this.checkDestroyed();
-        return this._name;
-    }
-    get options() {
-        this.checkDestroyed();
-        return this._options;
-    }
-    get config() {
-        this.checkDestroyed();
-        return this._config;
-    }
-    get container() {
-        return this._container;
-    }
-    get isDeleted() {
-        return this._isDeleted;
-    }
-    set isDeleted(val) {
-        this._isDeleted = val;
-    }
-    /**
-     * This function will throw an Error if the App has already been deleted -
-     * use before performing API actions on the App.
-     */ checkDestroyed() {
-        if (this.isDeleted) throw ERROR_FACTORY.create("app-deleted" /* APP_DELETED */ , {
-            appName: this._name
-        });
-    }
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * The current SDK version.
- *
- * @public
- */ const SDK_VERSION = version;
-function initializeApp(options, rawConfig = {}) {
-    if (typeof rawConfig !== 'object') {
-        const name3 = rawConfig;
-        rawConfig = {
-            name: name3
-        };
-    }
-    const config = Object.assign({
-        name: DEFAULT_ENTRY_NAME,
-        automaticDataCollectionEnabled: false
-    }, rawConfig);
-    const name4 = config.name;
-    if (typeof name4 !== 'string' || !name4) throw ERROR_FACTORY.create("bad-app-name" /* BAD_APP_NAME */ , {
-        appName: String(name4)
-    });
-    const existingApp = _apps.get(name4);
-    if (existingApp) {
-        // return the existing app if options and config deep equal the ones in the existing app.
-        if (_util.deepEqual(options, existingApp.options) && _util.deepEqual(config, existingApp.config)) return existingApp;
-        else throw ERROR_FACTORY.create("duplicate-app" /* DUPLICATE_APP */ , {
-            appName: name4
-        });
-    }
-    const container = new _component.ComponentContainer(name4);
-    for (const component of _components.values())container.addComponent(component);
-    const newApp = new FirebaseAppImpl(options, config, container);
-    _apps.set(name4, newApp);
-    return newApp;
-}
-/**
- * Retrieves a {@link @firebase/app#FirebaseApp} instance.
- *
- * When called with no arguments, the default app is returned. When an app name
- * is provided, the app corresponding to that name is returned.
- *
- * An exception is thrown if the app being retrieved has not yet been
- * initialized.
- *
- * @example
- * ```javascript
- * // Return the default app
- * const app = getApp();
- * ```
- *
- * @example
- * ```javascript
- * // Return a named app
- * const otherApp = getApp("otherApp");
- * ```
- *
- * @param name - Optional name of the app to return. If no name is
- *   provided, the default is `"[DEFAULT]"`.
- *
- * @returns The app corresponding to the provided app name.
- *   If no app name is provided, the default app is returned.
- *
- * @public
- */ function getApp(name5 = DEFAULT_ENTRY_NAME) {
-    const app = _apps.get(name5);
-    if (!app) throw ERROR_FACTORY.create("no-app" /* NO_APP */ , {
-        appName: name5
-    });
-    return app;
-}
-/**
- * A (read-only) array of all initialized apps.
- * @public
- */ function getApps() {
-    return Array.from(_apps.values());
-}
-/**
- * Renders this app unusable and frees the resources of all associated
- * services.
- *
- * @example
- * ```javascript
- * deleteApp(app)
- *   .then(function() {
- *     console.log("App deleted successfully");
- *   })
- *   .catch(function(error) {
- *     console.log("Error deleting app:", error);
- *   });
- * ```
- *
- * @public
- */ async function deleteApp(app) {
-    const name6 = app.name;
-    if (_apps.has(name6)) {
-        _apps.delete(name6);
-        await Promise.all(app.container.getProviders().map((provider)=>provider.delete()
-        ));
-        app.isDeleted = true;
-    }
-}
-/**
- * Registers a library's name and version for platform logging purposes.
- * @param library - Name of 1p or 3p library (e.g. firestore, angularfire)
- * @param version - Current version of that library.
- * @param variant - Bundle variant, e.g., node, rn, etc.
- *
- * @public
- */ function registerVersion(libraryKeyOrName, version1, variant) {
-    var _a;
-    // TODO: We can use this check to whitelist strings when/if we set up
-    // a good whitelist system.
-    let library = (_a = PLATFORM_LOG_STRING[libraryKeyOrName]) !== null && _a !== void 0 ? _a : libraryKeyOrName;
-    if (variant) library += `-${variant}`;
-    const libraryMismatch = library.match(/\s|\//);
-    const versionMismatch = version1.match(/\s|\//);
-    if (libraryMismatch || versionMismatch) {
-        const warning = [
-            `Unable to register library "${library}" with version "${version1}":`
-        ];
-        if (libraryMismatch) warning.push(`library name "${library}" contains illegal characters (whitespace or "/")`);
-        if (libraryMismatch && versionMismatch) warning.push('and');
-        if (versionMismatch) warning.push(`version name "${version1}" contains illegal characters (whitespace or "/")`);
-        logger.warn(warning.join(' '));
-        return;
-    }
-    _registerComponent(new _component.Component(`${library}-version`, ()=>({
-            library,
-            version: version1
-        })
-    , "VERSION" /* VERSION */ ));
-}
-/**
- * Sets log handler for all Firebase SDKs.
- * @param logCallback - An optional custom log handler that executes user code whenever
- * the Firebase SDK makes a logging call.
- *
- * @public
- */ function onLog(logCallback, options) {
-    if (logCallback !== null && typeof logCallback !== 'function') throw ERROR_FACTORY.create("invalid-log-argument" /* INVALID_LOG_ARGUMENT */ );
-    _logger.setUserLogHandler(logCallback, options);
-}
-/**
- * Sets log level for all Firebase SDKs.
- *
- * All of the log types above the current log level are captured (i.e. if
- * you set the log level to `info`, errors are logged, but `debug` and
- * `verbose` logs are not).
- *
- * @public
- */ function setLogLevel(logLevel) {
-    _logger.setLogLevel(logLevel);
-}
-/**
- * @license
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const DB_NAME = 'firebase-heartbeat-database';
-const DB_VERSION = 1;
-const STORE_NAME = 'firebase-heartbeat-store';
-let dbPromise = null;
-function getDbPromise() {
-    if (!dbPromise) dbPromise = _util.openDB(DB_NAME, DB_VERSION, (db, oldVersion)=>{
-        // We don't use 'break' in this switch statement, the fall-through
-        // behavior is what we want, because if there are multiple versions between
-        // the old version and the current version, we want ALL the migrations
-        // that correspond to those versions to run, not only the last one.
-        // eslint-disable-next-line default-case
-        switch(oldVersion){
-            case 0:
-                db.createObjectStore(STORE_NAME);
-        }
-    }).catch((e)=>{
-        throw ERROR_FACTORY.create("storage-open" /* STORAGE_OPEN */ , {
-            originalErrorMessage: e.message
-        });
-    });
-    return dbPromise;
-}
-async function readHeartbeatsFromIndexedDB(app) {
-    try {
-        const db = await getDbPromise();
-        return db.transaction(STORE_NAME).objectStore(STORE_NAME).get(computeKey(app));
-    } catch (e) {
-        throw ERROR_FACTORY.create("storage-get" /* STORAGE_GET */ , {
-            originalErrorMessage: e.message
-        });
-    }
-}
-async function writeHeartbeatsToIndexedDB(app, heartbeatObject) {
-    try {
-        const db = await getDbPromise();
-        const tx = db.transaction(STORE_NAME, 'readwrite');
-        const objectStore = tx.objectStore(STORE_NAME);
-        await objectStore.put(heartbeatObject, computeKey(app));
-        return tx.complete;
-    } catch (e) {
-        throw ERROR_FACTORY.create("storage-set" /* STORAGE_WRITE */ , {
-            originalErrorMessage: e.message
-        });
-    }
-}
-function computeKey(app) {
-    return `${app.name}!${app.options.appId}`;
-}
-/**
- * @license
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const MAX_HEADER_BYTES = 1024;
-// 30 days
-const STORED_HEARTBEAT_RETENTION_MAX_MILLIS = 2592000000;
-class HeartbeatServiceImpl {
-    constructor(container){
-        this.container = container;
-        /**
-         * In-memory cache for heartbeats, used by getHeartbeatsHeader() to generate
-         * the header string.
-         * Stores one record per date. This will be consolidated into the standard
-         * format of one record per user agent string before being sent as a header.
-         * Populated from indexedDB when the controller is instantiated and should
-         * be kept in sync with indexedDB.
-         * Leave public for easier testing.
-         */ this._heartbeatsCache = null;
-        const app = this.container.getProvider('app').getImmediate();
-        this._storage = new HeartbeatStorageImpl(app);
-        this._heartbeatsCachePromise = this._storage.read().then((result)=>{
-            this._heartbeatsCache = result;
-            return result;
-        });
-    }
-    /**
-     * Called to report a heartbeat. The function will generate
-     * a HeartbeatsByUserAgent object, update heartbeatsCache, and persist it
-     * to IndexedDB.
-     * Note that we only store one heartbeat per day. So if a heartbeat for today is
-     * already logged, subsequent calls to this function in the same day will be ignored.
-     */ async triggerHeartbeat() {
-        const platformLogger = this.container.getProvider('platform-logger').getImmediate();
-        // This is the "Firebase user agent" string from the platform logger
-        // service, not the browser user agent.
-        const agent = platformLogger.getPlatformInfoString();
-        const date = getUTCDateString();
-        if (this._heartbeatsCache === null) this._heartbeatsCache = await this._heartbeatsCachePromise;
-        // Do not store a heartbeat if one is already stored for this day
-        // or if a header has already been sent today.
-        if (this._heartbeatsCache.lastSentHeartbeatDate === date || this._heartbeatsCache.heartbeats.some((singleDateHeartbeat)=>singleDateHeartbeat.date === date
-        )) return;
-        else // There is no entry for this date. Create one.
-        this._heartbeatsCache.heartbeats.push({
-            date,
-            agent
-        });
-        // Remove entries older than 30 days.
-        this._heartbeatsCache.heartbeats = this._heartbeatsCache.heartbeats.filter((singleDateHeartbeat)=>{
-            const hbTimestamp = new Date(singleDateHeartbeat.date).valueOf();
-            const now = Date.now();
-            return now - hbTimestamp <= STORED_HEARTBEAT_RETENTION_MAX_MILLIS;
-        });
-        return this._storage.overwrite(this._heartbeatsCache);
-    }
-    /**
-     * Returns a base64 encoded string which can be attached to the heartbeat-specific header directly.
-     * It also clears all heartbeats from memory as well as in IndexedDB.
-     *
-     * NOTE: Consuming product SDKs should not send the header if this method
-     * returns an empty string.
-     */ async getHeartbeatsHeader() {
-        if (this._heartbeatsCache === null) await this._heartbeatsCachePromise;
-        // If it's still null or the array is empty, there is no data to send.
-        if (this._heartbeatsCache === null || this._heartbeatsCache.heartbeats.length === 0) return '';
-        const date = getUTCDateString();
-        // Extract as many heartbeats from the cache as will fit under the size limit.
-        const { heartbeatsToSend , unsentEntries  } = extractHeartbeatsForHeader(this._heartbeatsCache.heartbeats);
-        const headerString = _util.base64urlEncodeWithoutPadding(JSON.stringify({
-            version: 2,
-            heartbeats: heartbeatsToSend
-        }));
-        // Store last sent date to prevent another being logged/sent for the same day.
-        this._heartbeatsCache.lastSentHeartbeatDate = date;
-        if (unsentEntries.length > 0) {
-            // Store any unsent entries if they exist.
-            this._heartbeatsCache.heartbeats = unsentEntries;
-            // This seems more likely than emptying the array (below) to lead to some odd state
-            // since the cache isn't empty and this will be called again on the next request,
-            // and is probably safest if we await it.
-            await this._storage.overwrite(this._heartbeatsCache);
-        } else {
-            this._heartbeatsCache.heartbeats = [];
-            this._storage.overwrite(this._heartbeatsCache);
-        }
-        return headerString;
-    }
-}
-function getUTCDateString() {
-    const today = new Date();
-    // Returns date format 'YYYY-MM-DD'
-    return today.toISOString().substring(0, 10);
-}
-function extractHeartbeatsForHeader(heartbeatsCache, maxSize = MAX_HEADER_BYTES) {
-    // Heartbeats grouped by user agent in the standard format to be sent in
-    // the header.
-    const heartbeatsToSend = [];
-    // Single date format heartbeats that are not sent.
-    let unsentEntries = heartbeatsCache.slice();
-    for (const singleDateHeartbeat of heartbeatsCache){
-        // Look for an existing entry with the same user agent.
-        const heartbeatEntry = heartbeatsToSend.find((hb)=>hb.agent === singleDateHeartbeat.agent
-        );
-        if (!heartbeatEntry) {
-            // If no entry for this user agent exists, create one.
-            heartbeatsToSend.push({
-                agent: singleDateHeartbeat.agent,
-                dates: [
-                    singleDateHeartbeat.date
-                ]
-            });
-            if (countBytes(heartbeatsToSend) > maxSize) {
-                // If the header would exceed max size, remove the added heartbeat
-                // entry and stop adding to the header.
-                heartbeatsToSend.pop();
-                break;
-            }
-        } else {
-            heartbeatEntry.dates.push(singleDateHeartbeat.date);
-            // If the header would exceed max size, remove the added date
-            // and stop adding to the header.
-            if (countBytes(heartbeatsToSend) > maxSize) {
-                heartbeatEntry.dates.pop();
-                break;
-            }
-        }
-        // Pop unsent entry from queue. (Skipped if adding the entry exceeded
-        // quota and the loop breaks early.)
-        unsentEntries = unsentEntries.slice(1);
-    }
-    return {
-        heartbeatsToSend,
-        unsentEntries
-    };
-}
-class HeartbeatStorageImpl {
-    constructor(app){
-        this.app = app;
-        this._canUseIndexedDBPromise = this.runIndexedDBEnvironmentCheck();
-    }
-    async runIndexedDBEnvironmentCheck() {
-        if (!_util.isIndexedDBAvailable()) return false;
-        else return _util.validateIndexedDBOpenable().then(()=>true
-        ).catch(()=>false
-        );
-    }
-    /**
-     * Read all heartbeats.
-     */ async read() {
-        const canUseIndexedDB = await this._canUseIndexedDBPromise;
-        if (!canUseIndexedDB) return {
-            heartbeats: []
-        };
-        else {
-            const idbHeartbeatObject = await readHeartbeatsFromIndexedDB(this.app);
-            return idbHeartbeatObject || {
-                heartbeats: []
-            };
-        }
-    }
-    // overwrite the storage with the provided heartbeats
-    async overwrite(heartbeatsObject) {
-        var _a;
-        const canUseIndexedDB = await this._canUseIndexedDBPromise;
-        if (!canUseIndexedDB) return;
-        else {
-            const existingHeartbeatsObject = await this.read();
-            return writeHeartbeatsToIndexedDB(this.app, {
-                lastSentHeartbeatDate: (_a = heartbeatsObject.lastSentHeartbeatDate) !== null && _a !== void 0 ? _a : existingHeartbeatsObject.lastSentHeartbeatDate,
-                heartbeats: heartbeatsObject.heartbeats
-            });
-        }
-    }
-    // add heartbeats
-    async add(heartbeatsObject) {
-        var _a;
-        const canUseIndexedDB = await this._canUseIndexedDBPromise;
-        if (!canUseIndexedDB) return;
-        else {
-            const existingHeartbeatsObject = await this.read();
-            return writeHeartbeatsToIndexedDB(this.app, {
-                lastSentHeartbeatDate: (_a = heartbeatsObject.lastSentHeartbeatDate) !== null && _a !== void 0 ? _a : existingHeartbeatsObject.lastSentHeartbeatDate,
-                heartbeats: [
-                    ...existingHeartbeatsObject.heartbeats,
-                    ...heartbeatsObject.heartbeats
-                ]
-            });
-        }
-    }
-}
-/**
- * Calculate bytes of a HeartbeatsByUserAgent array after being wrapped
- * in a platform logging header JSON object, stringified, and converted
- * to base 64.
- */ function countBytes(heartbeatsCache) {
-    // base64 has a restricted set of characters, all of which should be 1 byte.
-    return _util.base64urlEncodeWithoutPadding(// heartbeatsCache wrapper properties
-    JSON.stringify({
-        version: 2,
-        heartbeats: heartbeatsCache
-    })).length;
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ function registerCoreComponents(variant) {
-    _registerComponent(new _component.Component('platform-logger', (container)=>new PlatformLoggerServiceImpl(container)
-    , "PRIVATE" /* PRIVATE */ ));
-    _registerComponent(new _component.Component('heartbeat', (container)=>new HeartbeatServiceImpl(container)
-    , "PRIVATE" /* PRIVATE */ ));
-    // Register `app` package.
-    registerVersion(name$o, version$1, variant);
-    // BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
-    registerVersion(name$o, version$1, 'esm2017');
-    // Register platform SDK identifier (no version).
-    registerVersion('fire-js', '');
-}
-/**
- * Firebase App
- *
- * @remarks This package coordinates the communication between the different Firebase components
- * @packageDocumentation
- */ registerCoreComponents('');
+var _component = require("@firebase/component");
+var _index7078A255Js = require("./index-7078a255.js");
 
-},{"@firebase/component":"bi1VB","@firebase/logger":"fZmft","@firebase/util":"ePiK6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bi1VB":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Component", ()=>Component
-);
-parcelHelpers.export(exports, "ComponentContainer", ()=>ComponentContainer
-);
-parcelHelpers.export(exports, "Provider", ()=>Provider
-);
-var _util = require("@firebase/util");
-/**
- * Component for service name T, e.g. `auth`, `auth-internal`
- */ class Component {
-    /**
-     *
-     * @param name The public service name, e.g. app, auth, firestore, database
-     * @param instanceFactory Service factory responsible for creating the public interface
-     * @param type whether the service provided by the component is public or private
-     */ constructor(name, instanceFactory, type){
-        this.name = name;
-        this.instanceFactory = instanceFactory;
-        this.type = type;
-        this.multipleInstances = false;
-        /**
-         * Properties to be added to the service namespace
-         */ this.serviceProps = {};
-        this.instantiationMode = "LAZY" /* LAZY */ ;
-        this.onInstanceCreated = null;
-    }
-    setInstantiationMode(mode) {
-        this.instantiationMode = mode;
-        return this;
-    }
-    setMultipleInstances(multipleInstances) {
-        this.multipleInstances = multipleInstances;
-        return this;
-    }
-    setServiceProps(props) {
-        this.serviceProps = props;
-        return this;
-    }
-    setInstanceCreatedCallback(callback) {
-        this.onInstanceCreated = callback;
-        return this;
-    }
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Provider for instance for service name T, e.g. 'auth', 'auth-internal'
- * NameServiceMapping[T] is an alias for the type of the instance
- */ class Provider {
-    constructor(name, container){
-        this.name = name;
-        this.container = container;
-        this.component = null;
-        this.instances = new Map();
-        this.instancesDeferred = new Map();
-        this.instancesOptions = new Map();
-        this.onInitCallbacks = new Map();
-    }
-    /**
-     * @param identifier A provider can provide mulitple instances of a service
-     * if this.component.multipleInstances is true.
-     */ get(identifier) {
-        // if multipleInstances is not supported, use the default name
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
-        if (!this.instancesDeferred.has(normalizedIdentifier)) {
-            const deferred = new _util.Deferred();
-            this.instancesDeferred.set(normalizedIdentifier, deferred);
-            if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) // initialize the service if it can be auto-initialized
-            try {
-                const instance = this.getOrInitializeService({
-                    instanceIdentifier: normalizedIdentifier
-                });
-                if (instance) deferred.resolve(instance);
-            } catch (e) {
-            // when the instance factory throws an exception during get(), it should not cause
-            // a fatal error. We just return the unresolved promise in this case.
-            }
-        }
-        return this.instancesDeferred.get(normalizedIdentifier).promise;
-    }
-    getImmediate(options) {
-        var _a;
-        // if multipleInstances is not supported, use the default name
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(options === null || options === void 0 ? void 0 : options.identifier);
-        const optional = (_a = options === null || options === void 0 ? void 0 : options.optional) !== null && _a !== void 0 ? _a : false;
-        if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) try {
-            return this.getOrInitializeService({
-                instanceIdentifier: normalizedIdentifier
-            });
-        } catch (e) {
-            if (optional) return null;
-            else throw e;
-        }
-        else {
-            // In case a component is not initialized and should/can not be auto-initialized at the moment, return null if the optional flag is set, or throw
-            if (optional) return null;
-            else throw Error(`Service ${this.name} is not available`);
-        }
-    }
-    getComponent() {
-        return this.component;
-    }
-    setComponent(component) {
-        if (component.name !== this.name) throw Error(`Mismatching Component ${component.name} for Provider ${this.name}.`);
-        if (this.component) throw Error(`Component for ${this.name} has already been provided`);
-        this.component = component;
-        // return early without attempting to initialize the component if the component requires explicit initialization (calling `Provider.initialize()`)
-        if (!this.shouldAutoInitialize()) return;
-        // if the service is eager, initialize the default instance
-        if (isComponentEager(component)) try {
-            this.getOrInitializeService({
-                instanceIdentifier: DEFAULT_ENTRY_NAME
-            });
-        } catch (e) {
-        // when the instance factory for an eager Component throws an exception during the eager
-        // initialization, it should not cause a fatal error.
-        // TODO: Investigate if we need to make it configurable, because some component may want to cause
-        // a fatal error in this case?
-        }
-        // Create service instances for the pending promises and resolve them
-        // NOTE: if this.multipleInstances is false, only the default instance will be created
-        // and all promises with resolve with it regardless of the identifier.
-        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
-            const normalizedIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
-            try {
-                // `getOrInitializeService()` should always return a valid instance since a component is guaranteed. use ! to make typescript happy.
-                const instance = this.getOrInitializeService({
-                    instanceIdentifier: normalizedIdentifier
-                });
-                instanceDeferred.resolve(instance);
-            } catch (e) {
-            // when the instance factory throws an exception, it should not cause
-            // a fatal error. We just leave the promise unresolved.
-            }
-        }
-    }
-    clearInstance(identifier = DEFAULT_ENTRY_NAME) {
-        this.instancesDeferred.delete(identifier);
-        this.instancesOptions.delete(identifier);
-        this.instances.delete(identifier);
-    }
-    // app.delete() will call this method on every provider to delete the services
-    // TODO: should we mark the provider as deleted?
-    async delete() {
-        const services = Array.from(this.instances.values());
-        await Promise.all([
-            ...services.filter((service)=>'INTERNAL' in service
-            ) // legacy services
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            .map((service)=>service.INTERNAL.delete()
-            ),
-            ...services.filter((service)=>'_delete' in service
-            ) // modularized services
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            .map((service)=>service._delete()
-            )
-        ]);
-    }
-    isComponentSet() {
-        return this.component != null;
-    }
-    isInitialized(identifier = DEFAULT_ENTRY_NAME) {
-        return this.instances.has(identifier);
-    }
-    getOptions(identifier = DEFAULT_ENTRY_NAME) {
-        return this.instancesOptions.get(identifier) || {};
-    }
-    initialize(opts = {}) {
-        const { options ={}  } = opts;
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(opts.instanceIdentifier);
-        if (this.isInitialized(normalizedIdentifier)) throw Error(`${this.name}(${normalizedIdentifier}) has already been initialized`);
-        if (!this.isComponentSet()) throw Error(`Component ${this.name} has not been registered yet`);
-        const instance = this.getOrInitializeService({
-            instanceIdentifier: normalizedIdentifier,
-            options
-        });
-        // resolve any pending promise waiting for the service instance
-        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
-            const normalizedDeferredIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
-            if (normalizedIdentifier === normalizedDeferredIdentifier) instanceDeferred.resolve(instance);
-        }
-        return instance;
-    }
-    /**
-     *
-     * @param callback - a function that will be invoked  after the provider has been initialized by calling provider.initialize().
-     * The function is invoked SYNCHRONOUSLY, so it should not execute any longrunning tasks in order to not block the program.
-     *
-     * @param identifier An optional instance identifier
-     * @returns a function to unregister the callback
-     */ onInit(callback, identifier) {
-        var _a;
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
-        const existingCallbacks = (_a = this.onInitCallbacks.get(normalizedIdentifier)) !== null && _a !== void 0 ? _a : new Set();
-        existingCallbacks.add(callback);
-        this.onInitCallbacks.set(normalizedIdentifier, existingCallbacks);
-        const existingInstance = this.instances.get(normalizedIdentifier);
-        if (existingInstance) callback(existingInstance, normalizedIdentifier);
-        return ()=>{
-            existingCallbacks.delete(callback);
-        };
-    }
-    /**
-     * Invoke onInit callbacks synchronously
-     * @param instance the service instance`
-     */ invokeOnInitCallbacks(instance, identifier) {
-        const callbacks = this.onInitCallbacks.get(identifier);
-        if (!callbacks) return;
-        for (const callback of callbacks)try {
-            callback(instance, identifier);
-        } catch (_a) {
-        // ignore errors in the onInit callback
-        }
-    }
-    getOrInitializeService({ instanceIdentifier , options ={}  }) {
-        let instance = this.instances.get(instanceIdentifier);
-        if (!instance && this.component) {
-            instance = this.component.instanceFactory(this.container, {
-                instanceIdentifier: normalizeIdentifierForFactory(instanceIdentifier),
-                options
-            });
-            this.instances.set(instanceIdentifier, instance);
-            this.instancesOptions.set(instanceIdentifier, options);
-            /**
-             * Invoke onInit listeners.
-             * Note this.component.onInstanceCreated is different, which is used by the component creator,
-             * while onInit listeners are registered by consumers of the provider.
-             */ this.invokeOnInitCallbacks(instance, instanceIdentifier);
-            /**
-             * Order is important
-             * onInstanceCreated() should be called after this.instances.set(instanceIdentifier, instance); which
-             * makes `isInitialized()` return true.
-             */ if (this.component.onInstanceCreated) try {
-                this.component.onInstanceCreated(this.container, instanceIdentifier, instance);
-            } catch (_a) {
-            // ignore errors in the onInstanceCreatedCallback
-            }
-        }
-        return instance || null;
-    }
-    normalizeInstanceIdentifier(identifier = DEFAULT_ENTRY_NAME) {
-        if (this.component) return this.component.multipleInstances ? identifier : DEFAULT_ENTRY_NAME;
-        else return identifier; // assume multiple instances are supported before the component is provided.
-    }
-    shouldAutoInitialize() {
-        return !!this.component && this.component.instantiationMode !== "EXPLICIT" /* EXPLICIT */ ;
-    }
-}
-// undefined should be passed to the service factory for the default instance
-function normalizeIdentifierForFactory(identifier) {
-    return identifier === DEFAULT_ENTRY_NAME ? undefined : identifier;
-}
-function isComponentEager(component) {
-    return component.instantiationMode === "EAGER" /* EAGER */ ;
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * ComponentContainer that provides Providers for service name T, e.g. `auth`, `auth-internal`
- */ class ComponentContainer {
-    constructor(name){
-        this.name = name;
-        this.providers = new Map();
-    }
-    /**
-     *
-     * @param component Component being added
-     * @param overwrite When a component with the same name has already been registered,
-     * if overwrite is true: overwrite the existing component with the new component and create a new
-     * provider with the new component. It can be useful in tests where you want to use different mocks
-     * for different tests.
-     * if overwrite is false: throw an exception
-     */ addComponent(component) {
-        const provider = this.getProvider(component.name);
-        if (provider.isComponentSet()) throw new Error(`Component ${component.name} has already been registered with ${this.name}`);
-        provider.setComponent(component);
-    }
-    addOrOverwriteComponent(component) {
-        const provider = this.getProvider(component.name);
-        if (provider.isComponentSet()) // delete the existing provider from the container, so we can register the new component
-        this.providers.delete(component.name);
-        this.addComponent(component);
-    }
-    /**
-     * getProvider provides a type safe interface where it can only be called with a field name
-     * present in NameServiceMapping interface.
-     *
-     * Firebase SDKs providing services should extend NameServiceMapping interface to register
-     * themselves.
-     */ getProvider(name) {
-        if (this.providers.has(name)) return this.providers.get(name);
-        // create a Provider for a service that hasn't registered with Firebase
-        const provider = new Provider(name, this);
-        this.providers.set(name, provider);
-        return provider;
-    }
-    getProviders() {
-        return Array.from(this.providers.values());
-    }
-}
-
-},{"@firebase/util":"ePiK6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ePiK6":[function(require,module,exports) {
+},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","./index-7078a255.js":"eExx3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ePiK6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CONSTANTS", ()=>CONSTANTS
@@ -3616,7 +2580,1191 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"fZmft":[function(require,module,exports) {
+},{}],"3AcPV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FirebaseError", ()=>_util.FirebaseError
+);
+parcelHelpers.export(exports, "SDK_VERSION", ()=>SDK_VERSION
+);
+parcelHelpers.export(exports, "_DEFAULT_ENTRY_NAME", ()=>DEFAULT_ENTRY_NAME
+);
+parcelHelpers.export(exports, "_addComponent", ()=>_addComponent
+);
+parcelHelpers.export(exports, "_addOrOverwriteComponent", ()=>_addOrOverwriteComponent
+);
+parcelHelpers.export(exports, "_apps", ()=>_apps
+);
+parcelHelpers.export(exports, "_clearComponents", ()=>_clearComponents
+);
+parcelHelpers.export(exports, "_components", ()=>_components
+);
+parcelHelpers.export(exports, "_getProvider", ()=>_getProvider
+);
+parcelHelpers.export(exports, "_registerComponent", ()=>_registerComponent
+);
+parcelHelpers.export(exports, "_removeServiceInstance", ()=>_removeServiceInstance
+);
+parcelHelpers.export(exports, "deleteApp", ()=>deleteApp
+);
+parcelHelpers.export(exports, "getApp", ()=>getApp
+);
+parcelHelpers.export(exports, "getApps", ()=>getApps
+);
+parcelHelpers.export(exports, "initializeApp", ()=>initializeApp
+);
+parcelHelpers.export(exports, "onLog", ()=>onLog
+);
+parcelHelpers.export(exports, "registerVersion", ()=>registerVersion
+);
+parcelHelpers.export(exports, "setLogLevel", ()=>setLogLevel
+);
+var _component = require("@firebase/component");
+var _logger = require("@firebase/logger");
+var _util = require("@firebase/util");
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class PlatformLoggerServiceImpl {
+    constructor(container){
+        this.container = container;
+    }
+    // In initial implementation, this will be called by installations on
+    // auth token refresh, and installations will send this string.
+    getPlatformInfoString() {
+        const providers = this.container.getProviders();
+        // Loop through providers and get library/version pairs from any that are
+        // version components.
+        return providers.map((provider)=>{
+            if (isVersionServiceProvider(provider)) {
+                const service = provider.getImmediate();
+                return `${service.library}/${service.version}`;
+            } else return null;
+        }).filter((logString)=>logString
+        ).join(' ');
+    }
+}
+/**
+ *
+ * @param provider check if this provider provides a VersionService
+ *
+ * NOTE: Using Provider<'app-version'> is a hack to indicate that the provider
+ * provides VersionService. The provider is not necessarily a 'app-version'
+ * provider.
+ */ function isVersionServiceProvider(provider) {
+    const component = provider.getComponent();
+    return (component === null || component === void 0 ? void 0 : component.type) === "VERSION" /* VERSION */ ;
+}
+const name$o = "@firebase/app";
+const version$1 = "0.7.21";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const logger = new _logger.Logger('@firebase/app');
+const name$n = "@firebase/app-compat";
+const name$m = "@firebase/analytics-compat";
+const name$l = "@firebase/analytics";
+const name$k = "@firebase/app-check-compat";
+const name$j = "@firebase/app-check";
+const name$i = "@firebase/auth";
+const name$h = "@firebase/auth-compat";
+const name$g = "@firebase/database";
+const name$f = "@firebase/database-compat";
+const name$e = "@firebase/functions";
+const name$d = "@firebase/functions-compat";
+const name$c = "@firebase/installations";
+const name$b = "@firebase/installations-compat";
+const name$a = "@firebase/messaging";
+const name$9 = "@firebase/messaging-compat";
+const name$8 = "@firebase/performance";
+const name$7 = "@firebase/performance-compat";
+const name$6 = "@firebase/remote-config";
+const name$5 = "@firebase/remote-config-compat";
+const name$4 = "@firebase/storage";
+const name$3 = "@firebase/storage-compat";
+const name$2 = "@firebase/firestore";
+const name$1 = "@firebase/firestore-compat";
+const name = "firebase";
+const version = "9.6.11";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The default app name
+ *
+ * @internal
+ */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
+const PLATFORM_LOG_STRING = {
+    [name$o]: 'fire-core',
+    [name$n]: 'fire-core-compat',
+    [name$l]: 'fire-analytics',
+    [name$m]: 'fire-analytics-compat',
+    [name$j]: 'fire-app-check',
+    [name$k]: 'fire-app-check-compat',
+    [name$i]: 'fire-auth',
+    [name$h]: 'fire-auth-compat',
+    [name$g]: 'fire-rtdb',
+    [name$f]: 'fire-rtdb-compat',
+    [name$e]: 'fire-fn',
+    [name$d]: 'fire-fn-compat',
+    [name$c]: 'fire-iid',
+    [name$b]: 'fire-iid-compat',
+    [name$a]: 'fire-fcm',
+    [name$9]: 'fire-fcm-compat',
+    [name$8]: 'fire-perf',
+    [name$7]: 'fire-perf-compat',
+    [name$6]: 'fire-rc',
+    [name$5]: 'fire-rc-compat',
+    [name$4]: 'fire-gcs',
+    [name$3]: 'fire-gcs-compat',
+    [name$2]: 'fire-fst',
+    [name$1]: 'fire-fst-compat',
+    'fire-js': 'fire-js',
+    [name]: 'fire-js-all'
+};
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @internal
+ */ const _apps = new Map();
+/**
+ * Registered components.
+ *
+ * @internal
+ */ // eslint-disable-next-line @typescript-eslint/no-explicit-any
+const _components = new Map();
+/**
+ * @param component - the component being added to this app's container
+ *
+ * @internal
+ */ function _addComponent(app, component) {
+    try {
+        app.container.addComponent(component);
+    } catch (e) {
+        logger.debug(`Component ${component.name} failed to register with FirebaseApp ${app.name}`, e);
+    }
+}
+/**
+ *
+ * @internal
+ */ function _addOrOverwriteComponent(app, component) {
+    app.container.addOrOverwriteComponent(component);
+}
+/**
+ *
+ * @param component - the component to register
+ * @returns whether or not the component is registered successfully
+ *
+ * @internal
+ */ function _registerComponent(component) {
+    const componentName = component.name;
+    if (_components.has(componentName)) {
+        logger.debug(`There were multiple attempts to register component ${componentName}.`);
+        return false;
+    }
+    _components.set(componentName, component);
+    // add the component to existing app instances
+    for (const app of _apps.values())_addComponent(app, component);
+    return true;
+}
+/**
+ *
+ * @param app - FirebaseApp instance
+ * @param name - service name
+ *
+ * @returns the provider for the service with the matching name
+ *
+ * @internal
+ */ function _getProvider(app, name1) {
+    const heartbeatController = app.container.getProvider('heartbeat').getImmediate({
+        optional: true
+    });
+    if (heartbeatController) heartbeatController.triggerHeartbeat();
+    return app.container.getProvider(name1);
+}
+/**
+ *
+ * @param app - FirebaseApp instance
+ * @param name - service name
+ * @param instanceIdentifier - service instance identifier in case the service supports multiple instances
+ *
+ * @internal
+ */ function _removeServiceInstance(app, name2, instanceIdentifier = DEFAULT_ENTRY_NAME) {
+    _getProvider(app, name2).clearInstance(instanceIdentifier);
+}
+/**
+ * Test only
+ *
+ * @internal
+ */ function _clearComponents() {
+    _components.clear();
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const ERRORS = {
+    ["no-app" /* NO_APP */ ]: "No Firebase App '{$appName}' has been created - call Firebase App.initializeApp()",
+    ["bad-app-name" /* BAD_APP_NAME */ ]: "Illegal App name: '{$appName}",
+    ["duplicate-app" /* DUPLICATE_APP */ ]: "Firebase App named '{$appName}' already exists with different options or config",
+    ["app-deleted" /* APP_DELETED */ ]: "Firebase App named '{$appName}' already deleted",
+    ["invalid-app-argument" /* INVALID_APP_ARGUMENT */ ]: "firebase.{$appName}() takes either no argument or a Firebase App instance.",
+    ["invalid-log-argument" /* INVALID_LOG_ARGUMENT */ ]: 'First argument to `onLog` must be null or a function.',
+    ["storage-open" /* STORAGE_OPEN */ ]: 'Error thrown when opening storage. Original error: {$originalErrorMessage}.',
+    ["storage-get" /* STORAGE_GET */ ]: 'Error thrown when reading from storage. Original error: {$originalErrorMessage}.',
+    ["storage-set" /* STORAGE_WRITE */ ]: 'Error thrown when writing to storage. Original error: {$originalErrorMessage}.',
+    ["storage-delete" /* STORAGE_DELETE */ ]: 'Error thrown when deleting from storage. Original error: {$originalErrorMessage}.'
+};
+const ERROR_FACTORY = new _util.ErrorFactory('app', 'Firebase', ERRORS);
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class FirebaseAppImpl {
+    constructor(options, config, container){
+        this._isDeleted = false;
+        this._options = Object.assign({}, options);
+        this._config = Object.assign({}, config);
+        this._name = config.name;
+        this._automaticDataCollectionEnabled = config.automaticDataCollectionEnabled;
+        this._container = container;
+        this.container.addComponent(new _component.Component('app', ()=>this
+        , "PUBLIC" /* PUBLIC */ ));
+    }
+    get automaticDataCollectionEnabled() {
+        this.checkDestroyed();
+        return this._automaticDataCollectionEnabled;
+    }
+    set automaticDataCollectionEnabled(val) {
+        this.checkDestroyed();
+        this._automaticDataCollectionEnabled = val;
+    }
+    get name() {
+        this.checkDestroyed();
+        return this._name;
+    }
+    get options() {
+        this.checkDestroyed();
+        return this._options;
+    }
+    get config() {
+        this.checkDestroyed();
+        return this._config;
+    }
+    get container() {
+        return this._container;
+    }
+    get isDeleted() {
+        return this._isDeleted;
+    }
+    set isDeleted(val) {
+        this._isDeleted = val;
+    }
+    /**
+     * This function will throw an Error if the App has already been deleted -
+     * use before performing API actions on the App.
+     */ checkDestroyed() {
+        if (this.isDeleted) throw ERROR_FACTORY.create("app-deleted" /* APP_DELETED */ , {
+            appName: this._name
+        });
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The current SDK version.
+ *
+ * @public
+ */ const SDK_VERSION = version;
+function initializeApp(options, rawConfig = {}) {
+    if (typeof rawConfig !== 'object') {
+        const name3 = rawConfig;
+        rawConfig = {
+            name: name3
+        };
+    }
+    const config = Object.assign({
+        name: DEFAULT_ENTRY_NAME,
+        automaticDataCollectionEnabled: false
+    }, rawConfig);
+    const name4 = config.name;
+    if (typeof name4 !== 'string' || !name4) throw ERROR_FACTORY.create("bad-app-name" /* BAD_APP_NAME */ , {
+        appName: String(name4)
+    });
+    const existingApp = _apps.get(name4);
+    if (existingApp) {
+        // return the existing app if options and config deep equal the ones in the existing app.
+        if (_util.deepEqual(options, existingApp.options) && _util.deepEqual(config, existingApp.config)) return existingApp;
+        else throw ERROR_FACTORY.create("duplicate-app" /* DUPLICATE_APP */ , {
+            appName: name4
+        });
+    }
+    const container = new _component.ComponentContainer(name4);
+    for (const component of _components.values())container.addComponent(component);
+    const newApp = new FirebaseAppImpl(options, config, container);
+    _apps.set(name4, newApp);
+    return newApp;
+}
+/**
+ * Retrieves a {@link @firebase/app#FirebaseApp} instance.
+ *
+ * When called with no arguments, the default app is returned. When an app name
+ * is provided, the app corresponding to that name is returned.
+ *
+ * An exception is thrown if the app being retrieved has not yet been
+ * initialized.
+ *
+ * @example
+ * ```javascript
+ * // Return the default app
+ * const app = getApp();
+ * ```
+ *
+ * @example
+ * ```javascript
+ * // Return a named app
+ * const otherApp = getApp("otherApp");
+ * ```
+ *
+ * @param name - Optional name of the app to return. If no name is
+ *   provided, the default is `"[DEFAULT]"`.
+ *
+ * @returns The app corresponding to the provided app name.
+ *   If no app name is provided, the default app is returned.
+ *
+ * @public
+ */ function getApp(name5 = DEFAULT_ENTRY_NAME) {
+    const app = _apps.get(name5);
+    if (!app) throw ERROR_FACTORY.create("no-app" /* NO_APP */ , {
+        appName: name5
+    });
+    return app;
+}
+/**
+ * A (read-only) array of all initialized apps.
+ * @public
+ */ function getApps() {
+    return Array.from(_apps.values());
+}
+/**
+ * Renders this app unusable and frees the resources of all associated
+ * services.
+ *
+ * @example
+ * ```javascript
+ * deleteApp(app)
+ *   .then(function() {
+ *     console.log("App deleted successfully");
+ *   })
+ *   .catch(function(error) {
+ *     console.log("Error deleting app:", error);
+ *   });
+ * ```
+ *
+ * @public
+ */ async function deleteApp(app) {
+    const name6 = app.name;
+    if (_apps.has(name6)) {
+        _apps.delete(name6);
+        await Promise.all(app.container.getProviders().map((provider)=>provider.delete()
+        ));
+        app.isDeleted = true;
+    }
+}
+/**
+ * Registers a library's name and version for platform logging purposes.
+ * @param library - Name of 1p or 3p library (e.g. firestore, angularfire)
+ * @param version - Current version of that library.
+ * @param variant - Bundle variant, e.g., node, rn, etc.
+ *
+ * @public
+ */ function registerVersion(libraryKeyOrName, version1, variant) {
+    var _a;
+    // TODO: We can use this check to whitelist strings when/if we set up
+    // a good whitelist system.
+    let library = (_a = PLATFORM_LOG_STRING[libraryKeyOrName]) !== null && _a !== void 0 ? _a : libraryKeyOrName;
+    if (variant) library += `-${variant}`;
+    const libraryMismatch = library.match(/\s|\//);
+    const versionMismatch = version1.match(/\s|\//);
+    if (libraryMismatch || versionMismatch) {
+        const warning = [
+            `Unable to register library "${library}" with version "${version1}":`
+        ];
+        if (libraryMismatch) warning.push(`library name "${library}" contains illegal characters (whitespace or "/")`);
+        if (libraryMismatch && versionMismatch) warning.push('and');
+        if (versionMismatch) warning.push(`version name "${version1}" contains illegal characters (whitespace or "/")`);
+        logger.warn(warning.join(' '));
+        return;
+    }
+    _registerComponent(new _component.Component(`${library}-version`, ()=>({
+            library,
+            version: version1
+        })
+    , "VERSION" /* VERSION */ ));
+}
+/**
+ * Sets log handler for all Firebase SDKs.
+ * @param logCallback - An optional custom log handler that executes user code whenever
+ * the Firebase SDK makes a logging call.
+ *
+ * @public
+ */ function onLog(logCallback, options) {
+    if (logCallback !== null && typeof logCallback !== 'function') throw ERROR_FACTORY.create("invalid-log-argument" /* INVALID_LOG_ARGUMENT */ );
+    _logger.setUserLogHandler(logCallback, options);
+}
+/**
+ * Sets log level for all Firebase SDKs.
+ *
+ * All of the log types above the current log level are captured (i.e. if
+ * you set the log level to `info`, errors are logged, but `debug` and
+ * `verbose` logs are not).
+ *
+ * @public
+ */ function setLogLevel(logLevel) {
+    _logger.setLogLevel(logLevel);
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DB_NAME = 'firebase-heartbeat-database';
+const DB_VERSION = 1;
+const STORE_NAME = 'firebase-heartbeat-store';
+let dbPromise = null;
+function getDbPromise() {
+    if (!dbPromise) dbPromise = _util.openDB(DB_NAME, DB_VERSION, (db, oldVersion)=>{
+        // We don't use 'break' in this switch statement, the fall-through
+        // behavior is what we want, because if there are multiple versions between
+        // the old version and the current version, we want ALL the migrations
+        // that correspond to those versions to run, not only the last one.
+        // eslint-disable-next-line default-case
+        switch(oldVersion){
+            case 0:
+                db.createObjectStore(STORE_NAME);
+        }
+    }).catch((e)=>{
+        throw ERROR_FACTORY.create("storage-open" /* STORAGE_OPEN */ , {
+            originalErrorMessage: e.message
+        });
+    });
+    return dbPromise;
+}
+async function readHeartbeatsFromIndexedDB(app) {
+    try {
+        const db = await getDbPromise();
+        return db.transaction(STORE_NAME).objectStore(STORE_NAME).get(computeKey(app));
+    } catch (e) {
+        throw ERROR_FACTORY.create("storage-get" /* STORAGE_GET */ , {
+            originalErrorMessage: e.message
+        });
+    }
+}
+async function writeHeartbeatsToIndexedDB(app, heartbeatObject) {
+    try {
+        const db = await getDbPromise();
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        const objectStore = tx.objectStore(STORE_NAME);
+        await objectStore.put(heartbeatObject, computeKey(app));
+        return tx.complete;
+    } catch (e) {
+        throw ERROR_FACTORY.create("storage-set" /* STORAGE_WRITE */ , {
+            originalErrorMessage: e.message
+        });
+    }
+}
+function computeKey(app) {
+    return `${app.name}!${app.options.appId}`;
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const MAX_HEADER_BYTES = 1024;
+// 30 days
+const STORED_HEARTBEAT_RETENTION_MAX_MILLIS = 2592000000;
+class HeartbeatServiceImpl {
+    constructor(container){
+        this.container = container;
+        /**
+         * In-memory cache for heartbeats, used by getHeartbeatsHeader() to generate
+         * the header string.
+         * Stores one record per date. This will be consolidated into the standard
+         * format of one record per user agent string before being sent as a header.
+         * Populated from indexedDB when the controller is instantiated and should
+         * be kept in sync with indexedDB.
+         * Leave public for easier testing.
+         */ this._heartbeatsCache = null;
+        const app = this.container.getProvider('app').getImmediate();
+        this._storage = new HeartbeatStorageImpl(app);
+        this._heartbeatsCachePromise = this._storage.read().then((result)=>{
+            this._heartbeatsCache = result;
+            return result;
+        });
+    }
+    /**
+     * Called to report a heartbeat. The function will generate
+     * a HeartbeatsByUserAgent object, update heartbeatsCache, and persist it
+     * to IndexedDB.
+     * Note that we only store one heartbeat per day. So if a heartbeat for today is
+     * already logged, subsequent calls to this function in the same day will be ignored.
+     */ async triggerHeartbeat() {
+        const platformLogger = this.container.getProvider('platform-logger').getImmediate();
+        // This is the "Firebase user agent" string from the platform logger
+        // service, not the browser user agent.
+        const agent = platformLogger.getPlatformInfoString();
+        const date = getUTCDateString();
+        if (this._heartbeatsCache === null) this._heartbeatsCache = await this._heartbeatsCachePromise;
+        // Do not store a heartbeat if one is already stored for this day
+        // or if a header has already been sent today.
+        if (this._heartbeatsCache.lastSentHeartbeatDate === date || this._heartbeatsCache.heartbeats.some((singleDateHeartbeat)=>singleDateHeartbeat.date === date
+        )) return;
+        else // There is no entry for this date. Create one.
+        this._heartbeatsCache.heartbeats.push({
+            date,
+            agent
+        });
+        // Remove entries older than 30 days.
+        this._heartbeatsCache.heartbeats = this._heartbeatsCache.heartbeats.filter((singleDateHeartbeat)=>{
+            const hbTimestamp = new Date(singleDateHeartbeat.date).valueOf();
+            const now = Date.now();
+            return now - hbTimestamp <= STORED_HEARTBEAT_RETENTION_MAX_MILLIS;
+        });
+        return this._storage.overwrite(this._heartbeatsCache);
+    }
+    /**
+     * Returns a base64 encoded string which can be attached to the heartbeat-specific header directly.
+     * It also clears all heartbeats from memory as well as in IndexedDB.
+     *
+     * NOTE: Consuming product SDKs should not send the header if this method
+     * returns an empty string.
+     */ async getHeartbeatsHeader() {
+        if (this._heartbeatsCache === null) await this._heartbeatsCachePromise;
+        // If it's still null or the array is empty, there is no data to send.
+        if (this._heartbeatsCache === null || this._heartbeatsCache.heartbeats.length === 0) return '';
+        const date = getUTCDateString();
+        // Extract as many heartbeats from the cache as will fit under the size limit.
+        const { heartbeatsToSend , unsentEntries  } = extractHeartbeatsForHeader(this._heartbeatsCache.heartbeats);
+        const headerString = _util.base64urlEncodeWithoutPadding(JSON.stringify({
+            version: 2,
+            heartbeats: heartbeatsToSend
+        }));
+        // Store last sent date to prevent another being logged/sent for the same day.
+        this._heartbeatsCache.lastSentHeartbeatDate = date;
+        if (unsentEntries.length > 0) {
+            // Store any unsent entries if they exist.
+            this._heartbeatsCache.heartbeats = unsentEntries;
+            // This seems more likely than emptying the array (below) to lead to some odd state
+            // since the cache isn't empty and this will be called again on the next request,
+            // and is probably safest if we await it.
+            await this._storage.overwrite(this._heartbeatsCache);
+        } else {
+            this._heartbeatsCache.heartbeats = [];
+            this._storage.overwrite(this._heartbeatsCache);
+        }
+        return headerString;
+    }
+}
+function getUTCDateString() {
+    const today = new Date();
+    // Returns date format 'YYYY-MM-DD'
+    return today.toISOString().substring(0, 10);
+}
+function extractHeartbeatsForHeader(heartbeatsCache, maxSize = MAX_HEADER_BYTES) {
+    // Heartbeats grouped by user agent in the standard format to be sent in
+    // the header.
+    const heartbeatsToSend = [];
+    // Single date format heartbeats that are not sent.
+    let unsentEntries = heartbeatsCache.slice();
+    for (const singleDateHeartbeat of heartbeatsCache){
+        // Look for an existing entry with the same user agent.
+        const heartbeatEntry = heartbeatsToSend.find((hb)=>hb.agent === singleDateHeartbeat.agent
+        );
+        if (!heartbeatEntry) {
+            // If no entry for this user agent exists, create one.
+            heartbeatsToSend.push({
+                agent: singleDateHeartbeat.agent,
+                dates: [
+                    singleDateHeartbeat.date
+                ]
+            });
+            if (countBytes(heartbeatsToSend) > maxSize) {
+                // If the header would exceed max size, remove the added heartbeat
+                // entry and stop adding to the header.
+                heartbeatsToSend.pop();
+                break;
+            }
+        } else {
+            heartbeatEntry.dates.push(singleDateHeartbeat.date);
+            // If the header would exceed max size, remove the added date
+            // and stop adding to the header.
+            if (countBytes(heartbeatsToSend) > maxSize) {
+                heartbeatEntry.dates.pop();
+                break;
+            }
+        }
+        // Pop unsent entry from queue. (Skipped if adding the entry exceeded
+        // quota and the loop breaks early.)
+        unsentEntries = unsentEntries.slice(1);
+    }
+    return {
+        heartbeatsToSend,
+        unsentEntries
+    };
+}
+class HeartbeatStorageImpl {
+    constructor(app){
+        this.app = app;
+        this._canUseIndexedDBPromise = this.runIndexedDBEnvironmentCheck();
+    }
+    async runIndexedDBEnvironmentCheck() {
+        if (!_util.isIndexedDBAvailable()) return false;
+        else return _util.validateIndexedDBOpenable().then(()=>true
+        ).catch(()=>false
+        );
+    }
+    /**
+     * Read all heartbeats.
+     */ async read() {
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) return {
+            heartbeats: []
+        };
+        else {
+            const idbHeartbeatObject = await readHeartbeatsFromIndexedDB(this.app);
+            return idbHeartbeatObject || {
+                heartbeats: []
+            };
+        }
+    }
+    // overwrite the storage with the provided heartbeats
+    async overwrite(heartbeatsObject) {
+        var _a;
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) return;
+        else {
+            const existingHeartbeatsObject = await this.read();
+            return writeHeartbeatsToIndexedDB(this.app, {
+                lastSentHeartbeatDate: (_a = heartbeatsObject.lastSentHeartbeatDate) !== null && _a !== void 0 ? _a : existingHeartbeatsObject.lastSentHeartbeatDate,
+                heartbeats: heartbeatsObject.heartbeats
+            });
+        }
+    }
+    // add heartbeats
+    async add(heartbeatsObject) {
+        var _a;
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) return;
+        else {
+            const existingHeartbeatsObject = await this.read();
+            return writeHeartbeatsToIndexedDB(this.app, {
+                lastSentHeartbeatDate: (_a = heartbeatsObject.lastSentHeartbeatDate) !== null && _a !== void 0 ? _a : existingHeartbeatsObject.lastSentHeartbeatDate,
+                heartbeats: [
+                    ...existingHeartbeatsObject.heartbeats,
+                    ...heartbeatsObject.heartbeats
+                ]
+            });
+        }
+    }
+}
+/**
+ * Calculate bytes of a HeartbeatsByUserAgent array after being wrapped
+ * in a platform logging header JSON object, stringified, and converted
+ * to base 64.
+ */ function countBytes(heartbeatsCache) {
+    // base64 has a restricted set of characters, all of which should be 1 byte.
+    return _util.base64urlEncodeWithoutPadding(// heartbeatsCache wrapper properties
+    JSON.stringify({
+        version: 2,
+        heartbeats: heartbeatsCache
+    })).length;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function registerCoreComponents(variant) {
+    _registerComponent(new _component.Component('platform-logger', (container)=>new PlatformLoggerServiceImpl(container)
+    , "PRIVATE" /* PRIVATE */ ));
+    _registerComponent(new _component.Component('heartbeat', (container)=>new HeartbeatServiceImpl(container)
+    , "PRIVATE" /* PRIVATE */ ));
+    // Register `app` package.
+    registerVersion(name$o, version$1, variant);
+    // BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
+    registerVersion(name$o, version$1, 'esm2017');
+    // Register platform SDK identifier (no version).
+    registerVersion('fire-js', '');
+}
+/**
+ * Firebase App
+ *
+ * @remarks This package coordinates the communication between the different Firebase components
+ * @packageDocumentation
+ */ registerCoreComponents('');
+
+},{"@firebase/component":"bi1VB","@firebase/logger":"fZmft","@firebase/util":"ePiK6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bi1VB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Component", ()=>Component
+);
+parcelHelpers.export(exports, "ComponentContainer", ()=>ComponentContainer
+);
+parcelHelpers.export(exports, "Provider", ()=>Provider
+);
+var _util = require("@firebase/util");
+/**
+ * Component for service name T, e.g. `auth`, `auth-internal`
+ */ class Component {
+    /**
+     *
+     * @param name The public service name, e.g. app, auth, firestore, database
+     * @param instanceFactory Service factory responsible for creating the public interface
+     * @param type whether the service provided by the component is public or private
+     */ constructor(name, instanceFactory, type){
+        this.name = name;
+        this.instanceFactory = instanceFactory;
+        this.type = type;
+        this.multipleInstances = false;
+        /**
+         * Properties to be added to the service namespace
+         */ this.serviceProps = {};
+        this.instantiationMode = "LAZY" /* LAZY */ ;
+        this.onInstanceCreated = null;
+    }
+    setInstantiationMode(mode) {
+        this.instantiationMode = mode;
+        return this;
+    }
+    setMultipleInstances(multipleInstances) {
+        this.multipleInstances = multipleInstances;
+        return this;
+    }
+    setServiceProps(props) {
+        this.serviceProps = props;
+        return this;
+    }
+    setInstanceCreatedCallback(callback) {
+        this.onInstanceCreated = callback;
+        return this;
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Provider for instance for service name T, e.g. 'auth', 'auth-internal'
+ * NameServiceMapping[T] is an alias for the type of the instance
+ */ class Provider {
+    constructor(name, container){
+        this.name = name;
+        this.container = container;
+        this.component = null;
+        this.instances = new Map();
+        this.instancesDeferred = new Map();
+        this.instancesOptions = new Map();
+        this.onInitCallbacks = new Map();
+    }
+    /**
+     * @param identifier A provider can provide mulitple instances of a service
+     * if this.component.multipleInstances is true.
+     */ get(identifier) {
+        // if multipleInstances is not supported, use the default name
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
+        if (!this.instancesDeferred.has(normalizedIdentifier)) {
+            const deferred = new _util.Deferred();
+            this.instancesDeferred.set(normalizedIdentifier, deferred);
+            if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) // initialize the service if it can be auto-initialized
+            try {
+                const instance = this.getOrInitializeService({
+                    instanceIdentifier: normalizedIdentifier
+                });
+                if (instance) deferred.resolve(instance);
+            } catch (e) {
+            // when the instance factory throws an exception during get(), it should not cause
+            // a fatal error. We just return the unresolved promise in this case.
+            }
+        }
+        return this.instancesDeferred.get(normalizedIdentifier).promise;
+    }
+    getImmediate(options) {
+        var _a;
+        // if multipleInstances is not supported, use the default name
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(options === null || options === void 0 ? void 0 : options.identifier);
+        const optional = (_a = options === null || options === void 0 ? void 0 : options.optional) !== null && _a !== void 0 ? _a : false;
+        if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) try {
+            return this.getOrInitializeService({
+                instanceIdentifier: normalizedIdentifier
+            });
+        } catch (e) {
+            if (optional) return null;
+            else throw e;
+        }
+        else {
+            // In case a component is not initialized and should/can not be auto-initialized at the moment, return null if the optional flag is set, or throw
+            if (optional) return null;
+            else throw Error(`Service ${this.name} is not available`);
+        }
+    }
+    getComponent() {
+        return this.component;
+    }
+    setComponent(component) {
+        if (component.name !== this.name) throw Error(`Mismatching Component ${component.name} for Provider ${this.name}.`);
+        if (this.component) throw Error(`Component for ${this.name} has already been provided`);
+        this.component = component;
+        // return early without attempting to initialize the component if the component requires explicit initialization (calling `Provider.initialize()`)
+        if (!this.shouldAutoInitialize()) return;
+        // if the service is eager, initialize the default instance
+        if (isComponentEager(component)) try {
+            this.getOrInitializeService({
+                instanceIdentifier: DEFAULT_ENTRY_NAME
+            });
+        } catch (e) {
+        // when the instance factory for an eager Component throws an exception during the eager
+        // initialization, it should not cause a fatal error.
+        // TODO: Investigate if we need to make it configurable, because some component may want to cause
+        // a fatal error in this case?
+        }
+        // Create service instances for the pending promises and resolve them
+        // NOTE: if this.multipleInstances is false, only the default instance will be created
+        // and all promises with resolve with it regardless of the identifier.
+        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
+            const normalizedIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
+            try {
+                // `getOrInitializeService()` should always return a valid instance since a component is guaranteed. use ! to make typescript happy.
+                const instance = this.getOrInitializeService({
+                    instanceIdentifier: normalizedIdentifier
+                });
+                instanceDeferred.resolve(instance);
+            } catch (e) {
+            // when the instance factory throws an exception, it should not cause
+            // a fatal error. We just leave the promise unresolved.
+            }
+        }
+    }
+    clearInstance(identifier = DEFAULT_ENTRY_NAME) {
+        this.instancesDeferred.delete(identifier);
+        this.instancesOptions.delete(identifier);
+        this.instances.delete(identifier);
+    }
+    // app.delete() will call this method on every provider to delete the services
+    // TODO: should we mark the provider as deleted?
+    async delete() {
+        const services = Array.from(this.instances.values());
+        await Promise.all([
+            ...services.filter((service)=>'INTERNAL' in service
+            ) // legacy services
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            .map((service)=>service.INTERNAL.delete()
+            ),
+            ...services.filter((service)=>'_delete' in service
+            ) // modularized services
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            .map((service)=>service._delete()
+            )
+        ]);
+    }
+    isComponentSet() {
+        return this.component != null;
+    }
+    isInitialized(identifier = DEFAULT_ENTRY_NAME) {
+        return this.instances.has(identifier);
+    }
+    getOptions(identifier = DEFAULT_ENTRY_NAME) {
+        return this.instancesOptions.get(identifier) || {};
+    }
+    initialize(opts = {}) {
+        const { options ={}  } = opts;
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(opts.instanceIdentifier);
+        if (this.isInitialized(normalizedIdentifier)) throw Error(`${this.name}(${normalizedIdentifier}) has already been initialized`);
+        if (!this.isComponentSet()) throw Error(`Component ${this.name} has not been registered yet`);
+        const instance = this.getOrInitializeService({
+            instanceIdentifier: normalizedIdentifier,
+            options
+        });
+        // resolve any pending promise waiting for the service instance
+        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
+            const normalizedDeferredIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
+            if (normalizedIdentifier === normalizedDeferredIdentifier) instanceDeferred.resolve(instance);
+        }
+        return instance;
+    }
+    /**
+     *
+     * @param callback - a function that will be invoked  after the provider has been initialized by calling provider.initialize().
+     * The function is invoked SYNCHRONOUSLY, so it should not execute any longrunning tasks in order to not block the program.
+     *
+     * @param identifier An optional instance identifier
+     * @returns a function to unregister the callback
+     */ onInit(callback, identifier) {
+        var _a;
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
+        const existingCallbacks = (_a = this.onInitCallbacks.get(normalizedIdentifier)) !== null && _a !== void 0 ? _a : new Set();
+        existingCallbacks.add(callback);
+        this.onInitCallbacks.set(normalizedIdentifier, existingCallbacks);
+        const existingInstance = this.instances.get(normalizedIdentifier);
+        if (existingInstance) callback(existingInstance, normalizedIdentifier);
+        return ()=>{
+            existingCallbacks.delete(callback);
+        };
+    }
+    /**
+     * Invoke onInit callbacks synchronously
+     * @param instance the service instance`
+     */ invokeOnInitCallbacks(instance, identifier) {
+        const callbacks = this.onInitCallbacks.get(identifier);
+        if (!callbacks) return;
+        for (const callback of callbacks)try {
+            callback(instance, identifier);
+        } catch (_a) {
+        // ignore errors in the onInit callback
+        }
+    }
+    getOrInitializeService({ instanceIdentifier , options ={}  }) {
+        let instance = this.instances.get(instanceIdentifier);
+        if (!instance && this.component) {
+            instance = this.component.instanceFactory(this.container, {
+                instanceIdentifier: normalizeIdentifierForFactory(instanceIdentifier),
+                options
+            });
+            this.instances.set(instanceIdentifier, instance);
+            this.instancesOptions.set(instanceIdentifier, options);
+            /**
+             * Invoke onInit listeners.
+             * Note this.component.onInstanceCreated is different, which is used by the component creator,
+             * while onInit listeners are registered by consumers of the provider.
+             */ this.invokeOnInitCallbacks(instance, instanceIdentifier);
+            /**
+             * Order is important
+             * onInstanceCreated() should be called after this.instances.set(instanceIdentifier, instance); which
+             * makes `isInitialized()` return true.
+             */ if (this.component.onInstanceCreated) try {
+                this.component.onInstanceCreated(this.container, instanceIdentifier, instance);
+            } catch (_a) {
+            // ignore errors in the onInstanceCreatedCallback
+            }
+        }
+        return instance || null;
+    }
+    normalizeInstanceIdentifier(identifier = DEFAULT_ENTRY_NAME) {
+        if (this.component) return this.component.multipleInstances ? identifier : DEFAULT_ENTRY_NAME;
+        else return identifier; // assume multiple instances are supported before the component is provided.
+    }
+    shouldAutoInitialize() {
+        return !!this.component && this.component.instantiationMode !== "EXPLICIT" /* EXPLICIT */ ;
+    }
+}
+// undefined should be passed to the service factory for the default instance
+function normalizeIdentifierForFactory(identifier) {
+    return identifier === DEFAULT_ENTRY_NAME ? undefined : identifier;
+}
+function isComponentEager(component) {
+    return component.instantiationMode === "EAGER" /* EAGER */ ;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * ComponentContainer that provides Providers for service name T, e.g. `auth`, `auth-internal`
+ */ class ComponentContainer {
+    constructor(name){
+        this.name = name;
+        this.providers = new Map();
+    }
+    /**
+     *
+     * @param component Component being added
+     * @param overwrite When a component with the same name has already been registered,
+     * if overwrite is true: overwrite the existing component with the new component and create a new
+     * provider with the new component. It can be useful in tests where you want to use different mocks
+     * for different tests.
+     * if overwrite is false: throw an exception
+     */ addComponent(component) {
+        const provider = this.getProvider(component.name);
+        if (provider.isComponentSet()) throw new Error(`Component ${component.name} has already been registered with ${this.name}`);
+        provider.setComponent(component);
+    }
+    addOrOverwriteComponent(component) {
+        const provider = this.getProvider(component.name);
+        if (provider.isComponentSet()) // delete the existing provider from the container, so we can register the new component
+        this.providers.delete(component.name);
+        this.addComponent(component);
+    }
+    /**
+     * getProvider provides a type safe interface where it can only be called with a field name
+     * present in NameServiceMapping interface.
+     *
+     * Firebase SDKs providing services should extend NameServiceMapping interface to register
+     * themselves.
+     */ getProvider(name) {
+        if (this.providers.has(name)) return this.providers.get(name);
+        // create a Provider for a service that hasn't registered with Firebase
+        const provider = new Provider(name, this);
+        this.providers.set(name, provider);
+        return provider;
+    }
+    getProviders() {
+        return Array.from(this.providers.values());
+    }
+}
+
+},{"@firebase/util":"ePiK6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fZmft":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LogLevel", ()=>LogLevel
@@ -3800,179 +3948,7 @@ function setUserLogHandler(logCallback, options) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"drt1f":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _auth = require("@firebase/auth");
-parcelHelpers.exportAll(_auth, exports);
-
-},{"@firebase/auth":"khbwD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"khbwD":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ActionCodeOperation", ()=>_index7078A255Js.A
-);
-parcelHelpers.export(exports, "ActionCodeURL", ()=>_index7078A255Js.ac
-);
-parcelHelpers.export(exports, "AuthCredential", ()=>_index7078A255Js.G
-);
-parcelHelpers.export(exports, "AuthErrorCodes", ()=>_index7078A255Js.C
-);
-parcelHelpers.export(exports, "EmailAuthCredential", ()=>_index7078A255Js.H
-);
-parcelHelpers.export(exports, "EmailAuthProvider", ()=>_index7078A255Js.L
-);
-parcelHelpers.export(exports, "FacebookAuthProvider", ()=>_index7078A255Js.M
-);
-parcelHelpers.export(exports, "FactorId", ()=>_index7078A255Js.F
-);
-parcelHelpers.export(exports, "GithubAuthProvider", ()=>_index7078A255Js.Q
-);
-parcelHelpers.export(exports, "GoogleAuthProvider", ()=>_index7078A255Js.N
-);
-parcelHelpers.export(exports, "OAuthCredential", ()=>_index7078A255Js.I
-);
-parcelHelpers.export(exports, "OAuthProvider", ()=>_index7078A255Js.T
-);
-parcelHelpers.export(exports, "OperationType", ()=>_index7078A255Js.O
-);
-parcelHelpers.export(exports, "PhoneAuthCredential", ()=>_index7078A255Js.J
-);
-parcelHelpers.export(exports, "PhoneAuthProvider", ()=>_index7078A255Js.P
-);
-parcelHelpers.export(exports, "PhoneMultiFactorGenerator", ()=>_index7078A255Js.m
-);
-parcelHelpers.export(exports, "ProviderId", ()=>_index7078A255Js.o
-);
-parcelHelpers.export(exports, "RecaptchaVerifier", ()=>_index7078A255Js.R
-);
-parcelHelpers.export(exports, "SAMLAuthProvider", ()=>_index7078A255Js.U
-);
-parcelHelpers.export(exports, "SignInMethod", ()=>_index7078A255Js.S
-);
-parcelHelpers.export(exports, "TwitterAuthProvider", ()=>_index7078A255Js.V
-);
-parcelHelpers.export(exports, "applyActionCode", ()=>_index7078A255Js.a1
-);
-parcelHelpers.export(exports, "browserLocalPersistence", ()=>_index7078A255Js.b
-);
-parcelHelpers.export(exports, "browserPopupRedirectResolver", ()=>_index7078A255Js.k
-);
-parcelHelpers.export(exports, "browserSessionPersistence", ()=>_index7078A255Js.a
-);
-parcelHelpers.export(exports, "checkActionCode", ()=>_index7078A255Js.a2
-);
-parcelHelpers.export(exports, "confirmPasswordReset", ()=>_index7078A255Js.a0
-);
-parcelHelpers.export(exports, "connectAuthEmulator", ()=>_index7078A255Js.E
-);
-parcelHelpers.export(exports, "createUserWithEmailAndPassword", ()=>_index7078A255Js.a4
-);
-parcelHelpers.export(exports, "debugErrorMap", ()=>_index7078A255Js.z
-);
-parcelHelpers.export(exports, "deleteUser", ()=>_index7078A255Js.y
-);
-parcelHelpers.export(exports, "fetchSignInMethodsForEmail", ()=>_index7078A255Js.a9
-);
-parcelHelpers.export(exports, "getAdditionalUserInfo", ()=>_index7078A255Js.ak
-);
-parcelHelpers.export(exports, "getAuth", ()=>_index7078A255Js.n
-);
-parcelHelpers.export(exports, "getIdToken", ()=>_index7078A255Js.ah
-);
-parcelHelpers.export(exports, "getIdTokenResult", ()=>_index7078A255Js.ai
-);
-parcelHelpers.export(exports, "getMultiFactorResolver", ()=>_index7078A255Js.am
-);
-parcelHelpers.export(exports, "getRedirectResult", ()=>_index7078A255Js.j
-);
-parcelHelpers.export(exports, "inMemoryPersistence", ()=>_index7078A255Js.K
-);
-parcelHelpers.export(exports, "indexedDBLocalPersistence", ()=>_index7078A255Js.i
-);
-parcelHelpers.export(exports, "initializeAuth", ()=>_index7078A255Js.D
-);
-parcelHelpers.export(exports, "isSignInWithEmailLink", ()=>_index7078A255Js.a7
-);
-parcelHelpers.export(exports, "linkWithCredential", ()=>_index7078A255Js.Y
-);
-parcelHelpers.export(exports, "linkWithPhoneNumber", ()=>_index7078A255Js.l
-);
-parcelHelpers.export(exports, "linkWithPopup", ()=>_index7078A255Js.d
-);
-parcelHelpers.export(exports, "linkWithRedirect", ()=>_index7078A255Js.g
-);
-parcelHelpers.export(exports, "multiFactor", ()=>_index7078A255Js.an
-);
-parcelHelpers.export(exports, "onAuthStateChanged", ()=>_index7078A255Js.t
-);
-parcelHelpers.export(exports, "onIdTokenChanged", ()=>_index7078A255Js.q
-);
-parcelHelpers.export(exports, "parseActionCodeURL", ()=>_index7078A255Js.ad
-);
-parcelHelpers.export(exports, "prodErrorMap", ()=>_index7078A255Js.B
-);
-parcelHelpers.export(exports, "reauthenticateWithCredential", ()=>_index7078A255Js.Z
-);
-parcelHelpers.export(exports, "reauthenticateWithPhoneNumber", ()=>_index7078A255Js.r
-);
-parcelHelpers.export(exports, "reauthenticateWithPopup", ()=>_index7078A255Js.e
-);
-parcelHelpers.export(exports, "reauthenticateWithRedirect", ()=>_index7078A255Js.h
-);
-parcelHelpers.export(exports, "reload", ()=>_index7078A255Js.al
-);
-parcelHelpers.export(exports, "sendEmailVerification", ()=>_index7078A255Js.aa
-);
-parcelHelpers.export(exports, "sendPasswordResetEmail", ()=>_index7078A255Js.$
-);
-parcelHelpers.export(exports, "sendSignInLinkToEmail", ()=>_index7078A255Js.a6
-);
-parcelHelpers.export(exports, "setPersistence", ()=>_index7078A255Js.p
-);
-parcelHelpers.export(exports, "signInAnonymously", ()=>_index7078A255Js.W
-);
-parcelHelpers.export(exports, "signInWithCredential", ()=>_index7078A255Js.X
-);
-parcelHelpers.export(exports, "signInWithCustomToken", ()=>_index7078A255Js._
-);
-parcelHelpers.export(exports, "signInWithEmailAndPassword", ()=>_index7078A255Js.a5
-);
-parcelHelpers.export(exports, "signInWithEmailLink", ()=>_index7078A255Js.a8
-);
-parcelHelpers.export(exports, "signInWithPhoneNumber", ()=>_index7078A255Js.s
-);
-parcelHelpers.export(exports, "signInWithPopup", ()=>_index7078A255Js.c
-);
-parcelHelpers.export(exports, "signInWithRedirect", ()=>_index7078A255Js.f
-);
-parcelHelpers.export(exports, "signOut", ()=>_index7078A255Js.x
-);
-parcelHelpers.export(exports, "unlink", ()=>_index7078A255Js.aj
-);
-parcelHelpers.export(exports, "updateCurrentUser", ()=>_index7078A255Js.w
-);
-parcelHelpers.export(exports, "updateEmail", ()=>_index7078A255Js.af
-);
-parcelHelpers.export(exports, "updatePassword", ()=>_index7078A255Js.ag
-);
-parcelHelpers.export(exports, "updatePhoneNumber", ()=>_index7078A255Js.u
-);
-parcelHelpers.export(exports, "updateProfile", ()=>_index7078A255Js.ae
-);
-parcelHelpers.export(exports, "useDeviceLanguage", ()=>_index7078A255Js.v
-);
-parcelHelpers.export(exports, "verifyBeforeUpdateEmail", ()=>_index7078A255Js.ab
-);
-parcelHelpers.export(exports, "verifyPasswordResetCode", ()=>_index7078A255Js.a3
-);
-var _util = require("@firebase/util");
-var _app = require("@firebase/app");
-var _tslib = require("tslib");
-var _logger = require("@firebase/logger");
-var _component = require("@firebase/component");
-var _index7078A255Js = require("./index-7078a255.js");
-
-},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","./index-7078a255.js":"eExx3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lRdW5":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lRdW5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "__extends", ()=>__extends
@@ -12847,6 +12823,30 @@ var version = "0.19.12";
 }
 registerAuth("Browser" /* BROWSER */ );
 
-},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["b38PG","lgyI9"], "lgyI9", "parcelRequire014c")
+},{"@firebase/util":"ePiK6","@firebase/app":"3AcPV","tslib":"lRdW5","@firebase/logger":"fZmft","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5wGMN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _app = require("@firebase/app");
+parcelHelpers.exportAll(_app, exports);
+var name = "firebase";
+var version = "9.6.11";
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ _app.registerVersion(name, version, 'app');
+
+},{"@firebase/app":"3AcPV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["b38PG","lgyI9"], "lgyI9", "parcelRequire014c")
 
 //# sourceMappingURL=login.c82ed771.js.map
