@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 import { firebaseConfig } from "../utils/firebase"
 import { addProduct, uploadImages } from "./functions/addProduct";
@@ -8,6 +9,7 @@ import { addProduct, uploadImages } from "./functions/addProduct";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const storage = getStorage(app);
 
 const createProductForm = document.getElementById("createProductForm");
 
@@ -21,7 +23,7 @@ createProductForm.addEventListener("submit", async (e) =>{
     const images = createProductForm.images.files;
 
     if (images.lenght){
-        await uploadImages(images);
+        const uploadedImages = await uploadImages(storage, [...images]);
 
     }
 
@@ -30,7 +32,7 @@ createProductForm.addEventListener("submit", async (e) =>{
         description,
         price,
         category,
-        images
+        // images
 
     };
 
