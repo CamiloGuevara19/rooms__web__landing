@@ -1,84 +1,43 @@
-let user = {
+import { db } from "../scripts/app"
+import { getProducts } from "./functions/porducts";
 
-    name: "Nicolas Guevara",
-    email: "nicolasg1234@gmail.com",
-    gender: "Male",
-    age: 24,
-};
+const productSection = document.getElementById("products");
 
-let products = [
-
-    {
-        name: "X100PRE",
-        type: "Vinyl",
-        price: 90000,
-        stock: 3,
-        img: "disco1.jpg"
-    },
-
-    {
-        name: "DNA",
-        type: "Vinyl",
-        price: 80000,
-        stock: 0,
-        img: "disco3.jpg"
-    },
-
-    {
-        name: "Pro-Ject EVA",
-        type: "Player",
-        price: 40000,
-        stock: 2,
-        img: "player2.jpg"
-    },
-
-    {
-        name: "Pro-Ject III",
-        type: "Player",
-        price: 50000,
-        stock: 0,
-        img: "player1.jpg"
-    },
-
-    {
-        name: "Man on the moon",
-        type: "Vinyl",
-        price: 45000,
-        stock: 1,
-        img: "disco2.jpg"
-    },
-
-];
-
-function stockCheck(){
-    products.forEach((product)=>{
-        if(product.price > 50000 || product.stock >= 1){
-            console.log(product.name);
-        }
-    });
-}
-
-function drawProducts(){
-
-    let productdiv = document.createElement("div");
-
-    products.forEach(product =>{
-
-        productdiv.innerHTML = `
-
-        <h1>${product.name}</h1>
-        <img src="./data/${product.img}">
-        <h4>${product.type}</h4>
-        <p>${product.price}</p>
-        <p>${product.stock}</p>
-
-        `
+async function loadProducts() {
+    const firebaseProducts = await getProducts(db);
+    firebaseProducts.forEach( product => {
+        renderProduct(product);
     });
 
-    document.body.appendChild(productdiv);
+    console.log(firebaseProducts);
 }
 
-stockCheck();
-drawProducts();
+function renderProduct(item) {
+    const product = document.createElement("div")
+    product.className = "products";
+    product.className = "products__box";
+    product.className = "products__img";
+    product.className = "products__detail";
+    product.className = "products__title";
+    product.className = "products__price";
+    product.className = "products__more";
 
+    const coverImage = item.images ? item.images[0] : "https://latarta.com.co/wp-content/uploads/2018/06/default-placeholder-300x300.png"; 
 
+    product.innerHTML = `
+    <article class="products__box">
+    <img src="${coverImage}" alt="" class="products__img">
+    
+    <div class="products__details">
+
+        <h4 class="products__title">${item.name}</h4>
+        <h3 class="products__price">${item.price}</h3>
+        <a href="#" class="products__more">See more</a>
+    </div>
+    </article>
+    `;
+
+    productSection.appendChild(product);
+}
+
+loadProducts();

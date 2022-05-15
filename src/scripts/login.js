@@ -1,15 +1,5 @@
-// Import the functions you need from the SDKs you need
-import { getAuth } from "firebase/auth";
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { createUser, loginUser, addUserToDataBase } from "./functions/auth"
-
-import { firebaseConfig } from "../utils/firebase"
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-const db = getFirestore(app);
+import { db, auth} from "../scripts/app";
+import { createUser, loginUser, addUserToDataBase } from "./functions/auth";
 
 const createUserForm = document.getElementById("createUserForm");
 const loginUserForm = document.getElementById("loginUserForm");
