@@ -1,15 +1,20 @@
-import { db } from "../scripts/app"
+import { db, auth } from "../scripts/app"
 import { getProducts } from "./functions/porducts";
+import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
+import { onAuthStateChanged } from "firebase/auth";
 
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("category");
 const priceFilter = document.getElementById("order");
 
+let userLogged = undefined;
 let products = [];
-let cart = getMycart();
-console.log(cart);
+let cart = [];
+//console.log(cart);
 
 async function loadProducts() {
+
+    cart = getMycart();
     const firebaseProducts = await getProducts(db);
     firebaseProducts.forEach( product => {
         renderProduct(product);
@@ -58,15 +63,20 @@ function renderProduct(item) {
     addProductButton.addEventListener("click", async (e) => {
         e.preventDefault();
 
-        addProductToCart();
         cart.push(item);
+        addProductToCart();
 
-        //addProductButton.setAttribute("disabled", true);
+        if(userLogged){
+            await createFirebaseCart(db, userLogged.uid, cart);
+
+        }
+
+        //addProductButton.setAttribute("disabled", true); //this breaks my code for some reason
         addProductButton.innerText = "Product added!"
     });
 }
 
-function addProductToCart(){
+async function addProductToCart(){
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
@@ -114,4 +124,17 @@ priceFilter.addEventListener("change", e => {
     filterBy();
 });
 
-loadProducts();
+onAuthStateChanged(auth, (user) => {
+
+    console.log(user);
+    if (user) {
+        userLogged = user;
+
+    } else {
+
+    }
+
+    loadProducts();
+
+  });
+
