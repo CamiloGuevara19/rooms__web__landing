@@ -2,6 +2,7 @@ import { db, auth } from "../scripts/app"
 import { getProducts } from "./functions/porducts";
 import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
 import { onAuthStateChanged } from "firebase/auth";
+import { addProductToCart, getMycart } from "../utils/indexUtils";
 
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("category");
@@ -63,7 +64,7 @@ function renderProduct(item) {
         e.preventDefault();
 
         cart.push(item);
-        addProductToCart();
+        addProductToCart(cart);
 
         if(userLogged){
             await createFirebaseCart(db, userLogged.uid, cart);
@@ -73,15 +74,6 @@ function renderProduct(item) {
         //addProductButton.setAttribute("disabled", true); //this breaks my code for some reason
         addProductButton.innerText = "Product added!"
     });
-}
-
-async function addProductToCart(){
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function getMycart(){
-    const myCart = localStorage.getItem("cart");
-    return myCart ? JSON.parse(myCart) : [];
 }
 
 function filterBy() {
@@ -127,8 +119,8 @@ onAuthStateChanged(auth, async(user) => {
     if (user) {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
-      userLogged = user;
-      cart = await getFirebaseCart(db, userLogged.uid);
+        userLogged = user;
+        cart = await getFirebaseCart(db, userLogged.uid);
       // ...
     } else {
         cart = getMycart();
@@ -138,5 +130,5 @@ onAuthStateChanged(auth, async(user) => {
 
     loadProducts();
 
-  });
+    });
 

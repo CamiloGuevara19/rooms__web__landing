@@ -1,7 +1,15 @@
 import { referProduct } from "./functions/getProduct";
+import { onAuthStateChanged } from "firebase/auth";
+import { addProductToCart, getMycart } from "../utils/indexUtils";
+import { db, auth } from "../scripts/app"
+import { getFirebaseCart, createFirebaseCart } from "./functions/cart";
 
 const productInfoSection = document.getElementById("productInfo");
 const productAssetsSection = document.getElementById("productAssets");
+
+
+let userLogged = undefined;
+let cart = [];
 
 function getParam(param){
     const url = window.location.search;
@@ -41,6 +49,22 @@ function renderProduct(product){
     if (product.images.lenght > 1){
         createGallery(product.images);
     }
+
+    const productPageCartButton = document.querySelector(".product__button");
+    productPageCartButton.addEventListener("click", e =>{
+        e.preventDefault;
+        cart.push(product);
+
+        addProductToCart(cart);
+
+        if (userLogged) {
+            createFirebaseCart(db, userLogged.uid, cart);
+        }
+
+        //productPageCartButton.setAttribute("disable", true); //this breaks my code for some reason
+        productPageCartButton.innerText = "Product added!"
+    });
+
 }
 
 function createGallery(images){
@@ -66,4 +90,19 @@ function createGallery(images){
     });
 }
 
-loadProduct();
+onAuthStateChanged(auth, async(user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+        userLogged = user;
+        cart = await getFirebaseCart(db, userLogged.uid);
+      // ...
+    } else {
+        cart = getMycart();
+      // User is signed out
+      // ...
+    }
+
+    loadProduct();
+
+    });
