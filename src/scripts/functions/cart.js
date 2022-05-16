@@ -8,12 +8,11 @@ async function createFirebaseCart(db, userId, cart) {
     }
 }
 
-async function getFirebaseCart(db, userId){
+async function getFirebaseCart(db, userId) {
     const docRef = doc(db, "cart", userId);
     const docSnap = await getDoc(docRef);
-    const { cart } = docSnap.data();
-
-    return cart;
+    const result = docSnap.data();
+    return (result) ? result.cart : [];
 }
 
 export {
