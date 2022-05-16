@@ -9,7 +9,16 @@ function getMycart(){
     return myCart ? JSON.parse(myCart) : [];
 }
 
+function currencyFormat(price){
+    return new Intl.NumberFormat("es-CO", {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0
+    }).format(price);
+}
+
 export {
     addProductToCart,
-    getMycart
+    getMycart,
+    currencyFormat
 }

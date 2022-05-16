@@ -2,7 +2,7 @@ import { db, auth } from "../scripts/app"
 import { getProducts } from "./functions/porducts";
 import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
 import { onAuthStateChanged } from "firebase/auth";
-import { addProductToCart, getMycart } from "../utils/indexUtils";
+import { addProductToCart, getMycart, currencyFormat } from "../utils/indexUtils";
 
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("category");
@@ -50,7 +50,7 @@ function renderProduct(item) {
     <div class="products__details">
 
         <h4 class="products__title">${item.name}</h4>
-        <h3 class="products__price">$${item.price}</h3>
+        <h3 class="products__price">${currencyFormat(item.price)}</h3>
         ${productButtonCart}
     </div>
     </article>

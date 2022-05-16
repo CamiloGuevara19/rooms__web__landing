@@ -1,6 +1,6 @@
 import { referProduct } from "./functions/getProduct";
 import { onAuthStateChanged } from "firebase/auth";
-import { addProductToCart, getMycart } from "../utils/indexUtils";
+import { addProductToCart, getMycart, currencyFormat } from "../utils/indexUtils";
 import { db, auth } from "../scripts/app"
 import { getFirebaseCart, createFirebaseCart } from "./functions/cart";
 
@@ -34,12 +34,16 @@ async function loadProduct(){
 }
 
 function renderProduct(product){
+
+    const validateProduct = cart.some((productCart) => productCart.id === product.id);
+    const newProductButtonCart = validateProduct ? '<button class="product__button" disabled>Added to cart</button>' : '<button class="product__button">Add to Cart</button>'
+
     productInfoSection.innerHTML = ` 
 
     <h1 class="product__name">${product.name}</h1>
     <p class="product__description">${product.description}</p>
-    <h3 class="product__price">$${product.price}</h3>
-    <button class="product__button">Add to cart</button>
+    <h3 class="product__price">${currencyFormat(product.price)}</h3>
+    ${newProductButtonCart}
     `;
 
     productAssetsSection.innerHTML = `
