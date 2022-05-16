@@ -3,6 +3,7 @@ import { getProducts } from "./functions/porducts";
 
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("category");
+const priceFilter = document.getElementById("order");
 
 let products = [];
 
@@ -38,7 +39,7 @@ function renderProduct(item) {
     <div class="products__details">
 
         <h4 class="products__title">${item.name}</h4>
-        <h3 class="products__price">${"$" + item.price}</h3>
+        <h3 class="products__price">$${item.price}</h3>
         <button class="products__cart">Add to Cart</button>
     </div>
     </article>
@@ -49,20 +50,28 @@ function renderProduct(item) {
 
 function filterBy() {
     const newCategory = categoryFilter.value;
+    const newOrder = priceFilter.value;
 
     let filteredProduct = [];
 
     if (newCategory !== ""){
 
         filteredProduct = products.filter((product) => product.category === newCategory);
-        console.log(filteredProduct);
-    
-        productSection.innerHTML="";
+        //console.log(filteredProduct);
 
     }else {
         filteredProduct = products;
     }
 
+    if (newOrder === "downward") {
+        filteredProduct = filteredProduct.sort((a ,b) => b.price - a.price);
+    }
+
+    if (newOrder === "upward") {
+        filteredProduct = filteredProduct.sort((a, b) => a.price - b.price);
+    }
+
+    productSection.innerHTML="";
     filteredProduct.forEach( product => {
         renderProduct(product);
     });
@@ -70,6 +79,10 @@ function filterBy() {
 }
 
 categoryFilter.addEventListener("change", e => {
+    filterBy();
+});
+
+priceFilter.addEventListener("change", e => {
     filterBy();
 });
 
