@@ -28,6 +28,9 @@ button {
 }
 
 .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: 820px;
     padding-top: 96px;
@@ -39,9 +42,9 @@ button {
 }
 
 .products {
-    display: flex;
+    display: block;
     width: 100%;
-    height: 436px;
+    /*height: 436px;*/
     align-items: center;
     justify-content: center;
 }
@@ -52,7 +55,7 @@ button {
     height: 100%;
 }
 
-.products img {
+.products__img{
     height: 270px;
     width: 270px;
     object-fit: cover;
