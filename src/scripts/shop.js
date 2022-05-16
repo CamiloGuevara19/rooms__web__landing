@@ -2,6 +2,9 @@ import { db } from "../scripts/app"
 import { getProducts } from "./functions/porducts";
 
 const productSection = document.getElementById("products");
+const categoryFilter = document.getElementById("category");
+
+let products = [];
 
 async function loadProducts() {
     const firebaseProducts = await getProducts(db);
@@ -9,7 +12,9 @@ async function loadProducts() {
         renderProduct(product);
     });
 
-    console.log(firebaseProducts);
+    //console.log(firebaseProducts);
+
+    products = firebaseProducts;
 }
 
 function renderProduct(item) {
@@ -41,5 +46,31 @@ function renderProduct(item) {
 
     productSection.appendChild(product);
 }
+
+function filterBy() {
+    const newCategory = categoryFilter.value;
+
+    let filteredProduct = [];
+
+    if (newCategory !== ""){
+
+        filteredProduct = products.filter((product) => product.category === newCategory);
+        console.log(filteredProduct);
+    
+        productSection.innerHTML="";
+
+    }else {
+        filteredProduct = products;
+    }
+
+    filteredProduct.forEach( product => {
+        renderProduct(product);
+    });
+
+}
+
+categoryFilter.addEventListener("change", e => {
+    filterBy();
+});
 
 loadProducts();
