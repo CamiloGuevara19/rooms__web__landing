@@ -34,7 +34,7 @@ function renderProduct(item) {
     product.className = "products__price";
     product.className = "products__more";
 
-    product.setAttribute("href", `./product.html?id=${item.id}`);
+    product.setAttribute("href", `./productPage.html?id=${item.id}`);
 
     const coverImage = item.images ? item.images[0] : "https://latarta.com.co/wp-content/uploads/2018/06/default-placeholder-300x300.png"; 
 
