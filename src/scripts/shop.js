@@ -14,7 +14,6 @@ let cart = [];
 
 async function loadProducts() {
 
-    cart = getMycart();
     const firebaseProducts = await getProducts(db);
     firebaseProducts.forEach( product => {
         renderProduct(product);
@@ -124,14 +123,17 @@ priceFilter.addEventListener("change", e => {
     filterBy();
 });
 
-onAuthStateChanged(auth, (user) => {
-
-    console.log(user);
+onAuthStateChanged(auth, async(user) => {
     if (user) {
-        userLogged = user;
-
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      userLogged = user;
+      cart = await getFirebaseCart(db, userLogged.uid);
+      // ...
     } else {
-
+        cart = getMycart();
+      // User is signed out
+      // ...
     }
 
     loadProducts();

@@ -1,4 +1,4 @@
-import { setDoc, doc } from "firebase/firestore";
+import { getDoc, setDoc, doc } from "firebase/firestore";
 
 async function createFirebaseCart(db, userId, cart) {
     try {
@@ -8,8 +8,12 @@ async function createFirebaseCart(db, userId, cart) {
     }
 }
 
-async function getFirebaseCart(){
+async function getFirebaseCart(db, userId){
+    const docRef = doc(db, "cart", userId);
+    const docSnap = await getDoc(docRef);
+    const { cart } = docSnap.data();
 
+    return cart;
 }
 
 export {
