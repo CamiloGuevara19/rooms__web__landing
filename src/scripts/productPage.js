@@ -43,6 +43,7 @@ function renderProduct(product){
     <h1 class="product__name">${product.name}</h1>
     <p class="product__description">${product.description}</p>
     <h3 class="product__price">${currencyFormat(product.price)}</h3>
+    <a href="./threes.html"<button class="product__button">Reproduce</button></a>
     ${newProductButtonCart}
     `;
 

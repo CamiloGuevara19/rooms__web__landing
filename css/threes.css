@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.reproductor {
+    position: fixed;
+    top: 88%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    left: 5%;
+}
