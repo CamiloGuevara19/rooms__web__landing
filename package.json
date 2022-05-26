@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/CamiloGuevara19/rooms__web__landing#readme",
   "dependencies": {
-    "firebase": "^9.6.11"
+    "firebase": "^9.6.11",
+    "three": "^0.141.0"
   },
   "devDependencies": {
     "parcel": "^2.5.0",
