@@ -126,7 +126,7 @@ button {
   font-weight: bold;
 }
 
-.product__button {
+.product__button, .rep__button {
   width: 180px;
   height: 40px;
   box-sizing: border-box;
@@ -141,6 +141,32 @@ button {
   font-style: normal;
   font-weight: normal;
   display: block;
+}
+
+#share__div {
+  width: 200px;
+  background-color: #93b1b1;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  right: 20%;
+  box-shadow: 5px 5px 20px;
+}
+
+#close {
+  color: #f0f3f4;
+  font-size: 1em;
+  position: relative;
+  left: 45%;
+}
+
+#product__url {
+  color: #f0f3f4;
 }
 
 .footer {

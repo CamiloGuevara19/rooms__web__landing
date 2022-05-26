@@ -3,11 +3,13 @@ import { onAuthStateChanged } from "firebase/auth";
 import { addProductToCart, getMycart, currencyFormat } from "../utils/indexUtils";
 import { db, auth } from "../scripts/app"
 import { getFirebaseCart, createFirebaseCart } from "./functions/cart";
+import { doc } from "firebase/firestore";
 
 const productInfoSection = document.getElementById("productInfo");
 const productAssetsSection = document.getElementById("productAssets");
+const productshare = document.getElementById("share__div");
 
-
+productshare.style.display = "none";
 let userLogged = undefined;
 let cart = [];
 
@@ -43,7 +45,8 @@ function renderProduct(product){
     <h1 class="product__name">${product.name}</h1>
     <p class="product__description">${product.description}</p>
     <h3 class="product__price">${currencyFormat(product.price)}</h3>
-    <a href="./threes.html"<button class="product__button">Reproduce</button></a>
+    <a href="./threes.html"<button class="rep__button">Reproduce</button></a>
+    <button id="share" class="rep__button">Share</button>
     ${newProductButtonCart}
     `;
 
@@ -69,6 +72,11 @@ function renderProduct(product){
         //productPageCartButton.setAttribute("disable", true); //this breaks my code for some reason
         productPageCartButton.innerText = "Product added!"
     });
+
+
+    //Create share btton
+
+    createShareButton(product);
 
 }
 
@@ -111,3 +119,38 @@ onAuthStateChanged(auth, async(user) => {
     loadProduct();
 
     });
+
+    //compartir producto
+
+
+ function createShareButton(product){
+
+    let QRCode = require('qrcode')
+    let canvas = document.getElementById('canvas')
+
+QRCode.toCanvas(canvas, product.url, function (error) {
+  if (error) console.error(error)
+  console.log('success!');
+})
+    
+    const shareBtn = document.getElementById("share");
+    const closeBtn = document.getElementById("close")
+    const url = document.getElementById("product__url");
+
+    url.href = product.url;
+    url.innerHTML = product.name;
+
+
+
+    shareBtn.addEventListener("click",()=>{
+        productshare.style.display = "flex";
+        console.log("shared")
+    });
+
+    closeBtn.addEventListener("click",()=>{
+        productshare.style.display = "none";
+        console.log("close")
+    });
+
+ }
+  
