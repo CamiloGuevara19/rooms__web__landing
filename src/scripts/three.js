@@ -46,7 +46,7 @@ import * as THREE from 'three';
 					{
 						textureWidth: 512,
 						textureHeight: 512,
-						waterNormals: new THREE.TextureLoader().load( 'textures/waternormals.jpg', function ( texture ) {
+						waterNormals: new THREE.TextureLoader().load( '../data/waternormals.jpg', function ( texture ) {
 
 							texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 
