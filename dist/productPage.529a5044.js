@@ -630,7 +630,7 @@ function createShareButton(product) {
     });
 }
 
-},{"./functions/getProduct":"iYh4a","firebase/auth":"drt1f","../utils/indexUtils":"aLoRT","../scripts/app":"bAabt","./functions/cart":"bOATt","qrcode":"lB7MY","firebase/firestore":"cJafS"}],"iYh4a":[function(require,module,exports) {
+},{"./functions/getProduct":"iYh4a","firebase/auth":"drt1f","../utils/indexUtils":"aLoRT","../scripts/app":"bAabt","./functions/cart":"bOATt","firebase/firestore":"cJafS","qrcode":"lB7MY"}],"iYh4a":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "referProduct", ()=>referProduct
