@@ -558,7 +558,7 @@ function init() {
     water = new _water.Water(waterGeometry, {
         textureWidth: 512,
         textureHeight: 512,
-        waterNormals: new _three.TextureLoader().load('textures/waternormals.jpg', function(texture) {
+        waterNormals: new _three.TextureLoader().load('../data/waternormals.jpg', function(texture) {
             texture.wrapS = texture.wrapT = _three.RepeatWrapping;
         }),
         sunDirection: new _three.Vector3(),
